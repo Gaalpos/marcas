@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>titulo</title>
+    <!--uso de link-->
+    <link rel="stylesheet" type="text/css" href="" />
+</head>
+
+<body>
+    <a name="cabecera"></a>
+    <h1> Página web</h1>
+    <table border="1" align="center">
+        <tr>
+            <td><a href="#uno"> Párrafo uno</td>
+            <td><a href="#dos"> Párrafo dos</td>
+            <td><a href="#tres"> Párrafo tres</td>
+        </tr>
+        <tr>
+            <td><a href="#cuatro"> Párrafo cuatro</td>
+            <td><a href="#cinco"> Párrafo cinco</td>
+            <td><a href="#seis"> Párrafo seis</td>
+        </tr>
+
+
+    </table>
+
+    <a name="uno"></a>
+    <h2>Parrafo uno</h2>
+    <p>Nam faucibus, ipsum a accumsan tincidunt, quam enim molestie leo, quis accumsan enim augue eget mauris. Aliquam a
+        tortor neque. Morbi erat orci, elementum et nisi vel, vehicula luctus nunc. Nullam quis odio nec metus egestas
+        facilisis. Phasellus ornare sit amet eros id laoreet. Nulla rutrum massa quis laoreet tempor. Praesent lectus
+        lorem, facilisis nec faucibus congue, ultrices vitae quam. Nunc commodo purus sit amet lacus tincidunt, non
+        porta ante consectetur. Maecenas ac porttitor magna. Duis eu velit vitae diam convallis tincidunt eget vitae
+        sem. Aliquam quis venenatis mauris, sit amet porta sem. Donec posuere, urna ut dictum suscipit, eros dolor
+        pulvinar metus, id venenatis nunc massa sit amet nulla. In egestas ac lorem vel aliquet. Quisque a pharetra
+        massa. Sed laoreet erat at nisl efficitur, sit amet vulputate sem imperdiet. Duis pellentesque nisl a lorem
+        aliquam vestibulum. <a href="#cabecera">Volver al inicio</p>
+
+    <a name="dos">
+        <h2>parrafo dos</h2>
+        <p>Ut sit amet ex sapien. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia curae; Vestibulum eget dapibus massa, sit amet tincidunt urna. Fusce imperdiet diam at
+            volutpat
+            cursus. Donec ligula ligula, dapibus at quam eu, fermentum maximus justo. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Sed vitae convallis quam. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.
+            Proin commodo facilisis nulla vulputate vulputate. <a href="#cabecera">Volver al inicio</p>
+
+        <a name="tres">
+            <h2>Parrafo tres</h2>
+            <p>Nam faucibus, ipsum a accumsan tincidunt, quam enim molestie leo, quis accumsan enim augue eget mauris.
+                Aliquam a
+                tortor neque. Morbi erat orci, elementum et nisi vel, vehicula luctus nunc. Nullam quis odio nec metus
+                egestas
+                facilisis. Phasellus ornare sit amet eros id laoreet. Nulla rutrum massa quis laoreet tempor. Praesent
+                lectus
+                lorem, facilisis nec faucibus congue, ultrices vitae quam. Nunc commodo purus sit amet lacus tincidunt,
+                non
+                porta ante consectetur. Maecenas ac porttitor magna. Duis eu velit vitae diam convallis tincidunt eget
+                vitae
+                sem. Aliquam quis venenatis mauris, sit amet porta sem. Donec posuere, urna ut dictum suscipit, eros
+                dolor
+                pulvinar metus, id venenatis nunc massa sit amet nulla. In egestas ac lorem vel aliquet. Quisque a
+                pharetra
+                massa. Sed laoreet erat at nisl efficitur, sit amet vulputate sem imperdiet. Duis pellentesque nisl a
+                lorem
+                aliquam vestibulum. <a href="#cabecera">Volver al inicio</p>
+
+            <a name="cuatro">
+                <h2>Parrafo cuatro</h2>
+                <p>Ut sit amet ex sapien. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et
+                    ultrices
+                    posuere cubilia curae; Vestibulum eget dapibus massa, sit amet tincidunt urna. Fusce imperdiet diam
+                    at volutpat
+                    cursus. Donec ligula ligula, dapibus at quam eu, fermentum maximus justo. Lorem ipsum dolor sit
+                    amet,
+                    consectetur adipiscing elit. Sed vitae convallis quam. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.
+                    Proin commodo facilisis nulla vulputate vulputate. <a href="#cabecera">Volver al inicio</p>
+
+
+                <a name="cinco">
+                    <h2>Parrafo cinco</h2>
+                    <p>Nam faucibus, ipsum a accumsan tincidunt, quam enim molestie leo, quis accumsan enim augue eget
+                        mauris. Aliquam a
+                        tortor neque. Morbi erat orci, elementum et nisi vel, vehicula luctus nunc. Nullam quis odio nec
+                        metus egestas
+                        facilisis. Phasellus ornare sit amet eros id laoreet. Nulla rutrum massa quis laoreet tempor.
+                        Praesent lectus
+                        lorem, facilisis nec faucibus congue, ultrices vitae quam. Nunc commodo purus sit amet lacus
+                        tincidunt, non
+                        porta ante consectetur. Maecenas ac porttitor magna. Duis eu velit vitae diam convallis
+                        tincidunt eget vitae
+                        sem. Aliquam quis venenatis mauris, sit amet porta sem. Donec posuere, urna ut dictum suscipit,
+                        eros dolor
+                        pulvinar metus, id venenatis nunc massa sit amet nulla. In egestas ac lorem vel aliquet. Quisque
+                        a pharetra
+                        massa. Sed laoreet erat at nisl efficitur, sit amet vulputate sem imperdiet. Duis pellentesque
+                        nisl a lorem
+                        aliquam vestibulum. <a href="#cabecera">Volver al inicio</p>
+
+                    <a name="seis">
+                        <h2>Parrafo seis</h2>
+                        <p>Ut sit amet ex sapien. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci
+                            luctus et ultrices
+                            posuere cubilia curae; Vestibulum eget dapibus massa, sit amet tincidunt urna. Fusce
+                            imperdiet diam at volutpat
+                            cursus. Donec ligula ligula, dapibus at quam eu, fermentum maximus justo. Lorem ipsum dolor
+                            sit amet,
+                            consectetur adipiscing elit. Sed vitae convallis quam. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Proin commodo facilisis nulla vulputate vulputate. <a href="#cabecera">Volver al inicio</p>
+</body>
+
+</html>

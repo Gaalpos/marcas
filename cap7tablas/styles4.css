@@ -1,0 +1,24 @@
+/*estilos por defecto*/
+
+body{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    border-style: ridge;
+    border-color: rgb(0, 0, 0);
+    padding: 10px;
+    }
+
+    .normal {
+        width: 20%;
+        border-collapse: collapse; 
+        text-align: center;
+
+      }
+    
+    td{
+        padding: 5px;
+        border: 2px solid black;
+        text-align: center;
+        vertical-align: auto;
+        
+    }

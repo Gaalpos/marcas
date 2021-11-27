@@ -1,0 +1,98 @@
+ 
+ Ejemplo 1: El origen y el destino del enlace se encuentran en el mismo directorio
+
+ ESTOY EDITANDO ESTE DOCUMENTO
+ http://www.ejemplo.com/ruta1/ruta2/pagina1.html
+
+ Y QUIERO ENLAZAR A OTRO DOCUMENTO
+ http://www.ejemplo.com/ruta1/ruta2/pagina2.html
+
+ LA RUTA RELATIVA POR TANTO QUEDARA href="pagina2.html"
+
+
+
+
+ Ejemplo 2: El destino del enlace se encuentra cerca de su origen y en un nivel superior
+
+ ESTOY EDITANDO ESTE DOCUMENTO
+ http://www.ejemplo.com/ruta1/ruta2/ruta3/pagina1.html
+
+ ESTOY EDITANDO ESTE DOCUMENTO
+ http://www.ejemplo.com/ruta1/ruta2/ruta3/pagina1.html
+
+ LA RUTA RELATIVA POR TANTO QUEDARA href="pagina2.html"POR LO TANTO QUEDARA href="../pagina2.html"
+
+
+
+
+
+
+ Ejemplo 3: El destino del enlace se encuentra cerca de su origen y en dos niveles por arriba
+
+ ESTOY EDITANDO ESTE DOCUMENTO
+ http://www.ejemplo.com/ruta1/ruta2/ruta3/pagina1.html
+
+ Y QUIERO ENLAZAR A OTRO DOCUMENTO
+ http://www.ejemplo.com/ruta1/pagina2.html
+
+ LA RUTA RELATIVA POR TANTO QUEDARA href="pagina2.html"POR LO TANTO QUEDARA href="../../pagina2.html"
+
+
+
+
+
+
+ Ejemplo 4 Además de subir niveles, también se puede entrar en otros directorios para obtener los recursos:
+
+ ESTOY EDITANDO ESTE DOCUMENTO
+ http://www.ejemplo.com/ruta1/ruta2/ruta3/pagina1.html
+
+ Y QUIERO ENLAZAR A OTRO DOCUMENTO
+ http://www.ejemplo.com/ruta4/pagina2.html
+
+ LA RUTA RELATIVA POR TANTO QUEDARA 
+ href="../../../ruta4/pagina2.html"
+
+
+ Ejemplo 6 El destino del enlace se encuentra cerca de su origen y en un nivel inferior
+
+ ESTOY EDITANDO ESTE DOCUMENTO
+ http://www.ejemplo.com/ruta1/ruta2/ruta3/pagina1.html
+
+ Y QUIERO ENLAZAR A OTRO DOCUMENTO
+ http://www.ejemplo.com/ruta1/ruta2/ruta3/ruta4/pagina2.html
+
+ LA RUTA RELATIVA POR TANTO QUEDARA
+ href="ruta4/pagina2.html"
+
+
+
+
+ Ejemplo 7 El destino del enlace se encuentra cerca de su origen y en tre niveles por debajo
+
+ ESTOY EDITANDO ESTE DOCUMENTO
+ http://www.ejemplo.com/ruta1/ruta2/ruta3/pagina1.html
+
+ Y QUIERO ENLAZAR A OTRO DOCUMENTO
+ http://www.ejemplo.com/ruta1/ruta2/ruta3/ruta4/ruta5/ruta6/pagina2.html
+
+ LA RUTA RELATIVA POR TANTO QUEDARA
+ href="ruta4/ruta5/ruta6/pagina2.html"
+
+
+
+
+ Ejemplo 8 El origen y el destino del enlace se encuentran muy alejados
+****OJO: SOLO VALIDO EN UN SITIO WEB FUNCIONANDO
+ ESTOY EDITANDO ESTE DOCUMENTO
+ http://www.ejemplo.com/ruta1/ruta2/ruta3/pagina1.html
+
+ Y QUIERO ENLAZAR A OTRO DOCUMENTO
+ (Página web llamada pagina2.html y que se guarda en un directorio llamado ruta7 que se encuentra en la raíz del servidor)
+ http://www.ejemplo.com/ruta7/pagina2.html
+
+ LA RUTA RELATIVA POR TANTO QUEDARA
+ href="/ruta7/pagina2.html"
+
+ (Cuando la URL relativa comienza por /, el navegador considera que es la ruta completa
+comenzando desde la raíz del servidor, por lo que sólo le añade el protocolo y el nombre del servidor origen.)

@@ -1,0 +1,21 @@
+    /*estilos css para dos clases*/
+    
+body{
+width: 90%;
+margin:auto;
+border: 1px solid black;
+padding: 10px;
+
+}
+
+    .telefono {
+        color: blue;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .email {
+        color: rgb(0, 0, 255);
+        font-size: 30px;
+        font-style: italic;
+    }

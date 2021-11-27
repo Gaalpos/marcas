@@ -1,0 +1,25 @@
+/*estilos por defecto*/
+
+body{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    margin:auto;
+    border-style: ridge;
+    border-color: rgb(20, 206, 91);
+    padding: 10px;
+    }
+
+    .normal{
+        border-color: rgb(132, 0, 255);
+        border-style: ridge;
+        border-width: 3px;
+    }
+    td,td,th{
+        border-collapse: collapse;
+        border-color: rgb(17, 0, 255);
+        border-style: dashed;
+        border-width: 3px;
+    }
+
+
+    

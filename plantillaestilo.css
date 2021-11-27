@@ -1,0 +1,16 @@
+/*estilos por defecto*/
+
+body{
+    width: 90%;
+    margin:auto;
+    border: 1px solid black;
+    padding: 10px;
+   
+    
+    }
+
+    pre{
+    text-align: center;
+    font-size: 15pt;
+    font-family:monospace ;
+    }
