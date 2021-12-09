@@ -1,0 +1,25 @@
+a {
+    color: blue;
+}
+
+a.blanco {
+    color: #FFBB00;
+}
+
+a.tinto {
+    color: #800000;
+}
+
+span.ventaja {
+    color: red;
+}
+
+#democrats {
+    background: blue;
+    width: 40%;
+    margin: auto;
+}
+
+#republicans {
+    background: red;
+}

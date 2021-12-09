@@ -1,0 +1,56 @@
+a {
+    color: blue;
+}
+
+a.blanco {
+    color: #FFBB00;
+}
+
+a.tinto {
+    color: #800000;
+}
+
+span.ventaja {
+    color: red;
+}
+
+#democrats {
+    background: blue;
+    width: 40%;
+    margin: auto;
+}
+
+#republicans {
+    background: red;
+}
+
+h1.mp {
+    margin-top: 10px;
+    margin-right: 255px;
+    margin-bottom: 8px;
+    margin-left: 30px;
+    border: 1px solid red;
+    padding: 5px 15px;
+}
+
+p.pm {
+    margin: 3px 30px;
+    border: 2px dotted blue;
+    padding-left: 5px 70px;
+}
+
+body {
+    margin-top: 10px;
+    margin-right: 255px;
+    margin-bottom: 8px;
+    margin-left: 30px;
+    border: 1px solid red;
+    padding: 5px 15px;
+}
+
+div.box {
+    height: 500px;
+    width: 200px;
+    border: 3px solid black;
+    background: orange;
+    }
