@@ -1,0 +1,31 @@
+div.box {
+    height: 500px;
+    width: 200px;
+    border: 3px solid black;
+    background: orange;
+    }
+
+div.global{
+    width: 90%;
+    background-color: rgb(111, 102, 168);
+    margin: auto;
+    border: 2px dotted blue;
+}
+
+#picture{
+    float:left;
+    margin: 30px;
+    border: 8px dashed darkblue;
+    width: 100px;
+    background-color:dodgerblue;
+}
+#pictureraro{
+    float:left;
+    margin: 30px;
+    border: 8px dashed darkblue;
+    width: 100px;
+    background-color:dodgerblue;
+}
+.limpia{
+    clear: both;
+}

@@ -1,0 +1,31 @@
+div.global {
+    width: 90%;
+    background-color: rgb(111, 102, 168);
+    border: 1px solid black;
+    margin: auto;
+    border: 2px dotted blue;
+}
+
+#column1{
+    float: left;
+    width: 30%;
+    background-color: red;
+    border: 1px solid black;
+    margin: 50px 5px;
+}
+
+#column2 {
+    float: left;
+    width: 30%;
+    background-color: yellow;
+    border: 1px solid black;
+    margin: 50px 5px;
+}
+
+#column3 {
+    float: left;
+    width: 30%;
+    background-color: green;
+    border: 1px solid black;
+    margin: 50px 5px;
+}
