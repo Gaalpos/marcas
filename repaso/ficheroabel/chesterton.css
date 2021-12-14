@@ -1,0 +1,35 @@
+body {
+    margin: 2px 200px;
+    background-color: #97603c;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 2px 300px 30px 300px;
+    font-size: 35px;
+    text-align: center;
+}
+
+p {
+    line-height: 40px;
+}
+
+nav {
+    font-size: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 80px;
+}
+
+.a {
+    border: 3px solid #115be4;
+    border-radius: 8px;
+    padding: 3px;
+    background-color: #60d9dd;
+    color: #115be4;
+    text-decoration: none;
+    margin-left: 15px;
+}

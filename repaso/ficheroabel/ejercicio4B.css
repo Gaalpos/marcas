@@ -1,0 +1,32 @@
+div {
+    margin: 10px;
+    text-align: center;
+}
+
+.borde {
+    border: 1px solid #000;
+}
+
+#uno {
+    float: left;
+}
+
+#dos {
+    float: left;
+}
+
+#tres {
+    float: left;
+}
+
+#cuatro {
+    float: left;
+}
+
+#cinco {
+    float: left;
+}
+
+#seis {
+    float: left;
+}

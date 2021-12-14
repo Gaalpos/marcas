@@ -5,13 +5,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Document</title>
 </head>
 
 <body>
-<h3>Formulario</h3>
-<fieldset>Datos básicos</fieldset>
+    <h3>Formulario</h3>
+    <fieldset>
+        <legend>Rellene las siguientes opciones</legend>
+        <br>
+        <input type="radio" name="sexo" value="lengua" checked="checked" /> <label for="">Lengua</label>
+        <br>
+        <input type="radio" name="sexo" value="mates" /> <label for="">Matemáticas</label>
+        <br>
+        <input type="radio" name="sexo" value="historia" /> <label for="">Historia</label>
+        <br>
+        <input type="radio" name="sexo" value="geografia" /> <label for="">Geografía</label>
+        <br>
+        <select id="so3" name="so3" size="5" multiple="multiple">
+            <option value="lengua" selected="selected">Lengua</option>
+            <option value="matematicas">Matemáticas</option>
+            <option value="historia">Historia</option>
+            <option value="geografia">Geografía</option>
+        </select>
+        <br>
 
+        <label for="">Seleccione un color </label> <input type="color" value="#000000">
+        <br>
+        <label for="First">First Name</label>
+        <input type="text" id="first" name="first" value="" />
+        <label for="nombre">laste name</label>
+        <input type="text" id="first" name="first" value="" />
+        <br>
+
+        <label for="">Fichero anexo</label>
+        <input type="file" name="adjunto" id="">
+        <br>
+       
+        <input name="puesto_directivo" type="checkbox" value="lunes"/> <label for="">Lunes</label> 
+        <br>
+        <input name="puesto_tecnico" type="checkbox" value="martes"/> <label for="">Martes</label> 
+        <br>
+        <input name="puesto_empleado" type="checkbox" value="miercoles"/><label for="">Miércoles</label> 
+        <br>
+        <input name="puesto_empleado" type="checkbox" value="jueves"/><label for="">Jueves</label> 
+        <br>
+        <input name="puesto_empleado" type="checkbox" value="sabado"/><label for="">Sábado</label> 
+        <br>
+        
+
+    </fieldset>
+    <fieldset>
+        <legend>Por favor, complete estas opciones</legend>
+        <label for="descripcion"></label> <br />
+        <textarea id="descripcion" name="descripcion" cols="40" rows="5"> Utilice este recuadro por favir</textarea>
+        <br>
+        <label for="">Seleccione un color </label> <input type="color" value="#000000">
+        <br>
+        <input type="radio" name="sexo" value="java" checked="checked" /> <label for="">Java</label>
+        <input type="radio" name="sexo" value="python" checked="checked" /> <label for="">Python</label>
+        <input type="radio" name="sexo" value="html" checked="checked" /> <label for="">HTML</label>
+        <input type="radio" name="sexo" value="visualbasic" checked="checked" /> <label for="">Visual Basic</label>
+        <input type="radio" name="sexo" value="css" checked="checked" /> <label for="">CSS</label>
+        <br>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" value="" />
+        <label for="nombre">Apellidos</label>
+        <input type="text" id="nombre" name="apellidos" value="" />
+        <label for="nombre">Email</label>
+        <input type="text" id="nombre" name="email" value="" />
+        <label for="nombre">Teléfono</label>
+        <input type="text" id="nombre" name="telefono" value="" />
+
+    </fieldset>s
 </body>
 
 </html>

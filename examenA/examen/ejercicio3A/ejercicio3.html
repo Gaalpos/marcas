@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles3.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    <fieldset>
+        <legend>Personal info</legend>
+        <label for="First">First Name</label>
+        <input type="text" id="first" name="first" value="" />
+        <br>
+        <label for="nombre">Last name</label>
+        <input type="text" id="first" name="first" value="" />
+        <br>
+
+
+    </fieldset>
+    <fieldset>
+        <legend>Course info</legend>
+
+        Course:
+        <br>
+        <input type="radio" name="web" value="Web" checked="checked" /> <label for="">Web Design</label>
+        <br>
+        <input type="radio" name="sql" value="sql" /> <label for="">SQL</label>
+        <br>
+        <input type="radio" name="programming" value="programming" /> <label for="">Programming</label>
+       <br>
+       <label for="provincia">Career goal</label> <br />
+            <select id="career" name="career">
+                <option value="" selected="selected">- selecciona -</option>
+                <option value="01">Programmer</option>
+                <option value="02">Web developer</option> 
+            </select>
+        <br>
+    Skills (chek all that apply):
+    <br>
+    <input name="unix" type="checkbox" value="unix"/> <label for="">UNIX</label> 
+    <input name="VIM" type="checkbox" value="VIM"/> <label for="">VIM</label> 
+    <br>
+    <input name="HTML" type="checkbox" value="HTML"/><label for="">HTML</label> 
+    <input name="CSS" type="checkbox" value="CSS"/><label for="">CSS</label> 
+    <br>
+    <input name="Python" type="checkbox" value="python"/><label for="">Python</label> 
+    <input name="javascript" type="checkbox" value="javascript"/><label for="">JavaScript</label> 
+    <br>
+    <label for="descripcion">Describe all the additional skills you have</label> <br />
+        <textarea id="descripcion" name="descripcion" cols="60" rows="5"></textarea>
+
+    </fieldset>
+    <input type="submit" name="submit" value="Enter my information" />
+
+</form>
+
+</body>
+</html> 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 3B</title>
+</head>
+
+<body>
+    <form action="formu.php" method="POST">
+        <fieldset>
+            <legend>Rellenar</legend>
+
+            <input type="checkbox" name="conector" value="usb"><label for="usb">USB</label>
+            <input type="checkbox" name="conector" value="paralelo"><label for="paralelo">Paralelo</label>
+            <input type="checkbox" name="conector" value="ps2"><label for="ps2">PS2</label><br />
+
+            <textarea rows="10" cols="60">Por favor, escriba aquí</textarea><br />
+
+            <input type="radio" name="ciclo" value="asir"><label for="asir">ASIR</label><br />
+            <input type="radio" name="ciclo" value="dam"><label for="dam">DAM</label><br />
+            <input type="radio" name="ciclo" value="daw"><label for="daw">DAW</label><br /><br />
+
+            <label>Elija una fecha: </label><input type="date" name="fecha"><br />
+
+            <select size="4" multiple="multiple">
+                <option value="geografia">Geografía</option>
+                <option value="lengua">Lengua</option>
+                <option value="matematicas">Matemáticas</option>
+                <option value="historia">Historia</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Formulario de opciones</legend>
+
+            <label>Elija una fecha: </label><input type="date" name="fecha"><br />
+
+            <label>Elija un fichero: </label><input type="file" name="archivo"><br />
+
+            <label>Elija un color: </label><input type="color" name="color"><br />
+
+            <input type="checkbox" name="materia" value="lengua"><label for="lengua">Lengua</label>
+            <input type="checkbox" name="materia" value="matematicas"><label for="matematicas">Matemáticas</label>
+            <input type="checkbox" name="materia" value="historia"><label for="historia">Historia</label>
+            <input type="checkbox" name="materia" value="geografia"><label for="geografia">Geografía</label><br />
+
+            <select size="4" multiple="multiple">
+                <option value="automovil">Automóvil</option>
+                <option value="moto">Moto</option>
+                <option value="autobus">Autobús</option>
+            </select><br />
+
+            <textarea rows="10" cols="70">Utilice este recuadro por favor</textarea><br />
+            
+            <input type="radio" name="editor" value="notepad"><label for="notepad">Notepad</label><br />
+            <input type="radio" name="editor" value="emacs"><label for="emacs">Emacs</label><br />
+            <input type="radio" name="editor" value="otro"><label for="otro">Otro</label><br />
+        </fieldset>
+    </form>
+</body>
+
+</html>
