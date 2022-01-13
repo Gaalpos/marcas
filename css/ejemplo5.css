@@ -1,9 +1,4 @@
-p{
-    float: left;
-    width: 150px;
-    padding: 5px;
-    border: 1px solid red;
-}
+
 #contenedor{
     padding: 20px;
     margin: auto;
@@ -11,6 +6,13 @@ p{
     width: 80%;
 }
 
+p{
+    float: left;
+    width: 25%;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid red;
+}
 .reseteo{
     clear: both;
 }
