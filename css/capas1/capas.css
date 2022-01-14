@@ -1,0 +1,41 @@
+#contenedor {
+    padding: 20px;
+    margin: auto;
+    border: 1px solid black;
+    width: 80%;
+}
+
+#cromo1 {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    z-index: 1;
+}
+
+#cromo2 {
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    z-index: 2;
+}
+
+#cromo3 {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    z-index: 3;
+}
+
+#cromo4 {
+    position: absolute;
+    left: 250px;
+    top: 250px;
+    z-index: 4;
+}
+
+#cromo4repe {
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    z-index: 5;
+}
