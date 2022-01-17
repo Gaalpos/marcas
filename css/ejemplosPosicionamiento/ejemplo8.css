@@ -1,0 +1,39 @@
+#contenedor {
+    padding: 20px;
+    margin: auto;
+    border: 1px solid black;
+    width: 80%;
+    height: auto;
+}
+/*estilos generales*/
+
+#div-0, #div-2 {
+background-color:#88d;
+color:#000;
+}
+#div-1 {
+width:400px;
+background-color:#000;
+color:#fff;
+
+}
+#div-1-padding {
+
+padding:10px;
+}
+#div-1a {
+background-color:#d33;
+color:#fff;
+float:left;
+width:150px;
+}
+#div-1b {
+background-color:#3d3;
+color:#fff;
+float:left;
+width:150px;
+}
+#div-1c {
+background-color:#33d;
+color:#fff;
+}
