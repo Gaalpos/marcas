@@ -1,0 +1,31 @@
+body {
+    margin: 40px;
+}
+
+/*contenedor de cajas*/
+.wrapper {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 30px;
+    background-color: #fff;
+    color: #444;
+    width: 80%;
+    margin: auto;
+    border: 1px solid blue;
+}
+/*cajas*/
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+ .box.a{
+    color: blue;
+    background-color: aqua;
+}
+.box.b{
+    color: red;
+    background-color: violet;
+}
