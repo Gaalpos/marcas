@@ -2,7 +2,9 @@ body {
     margin: 40px;
 }
 
+
 /*contenedor de cajas*/
+
 .wrapper {
     display: grid;
     grid-template-columns: 100px 100px 100px;
@@ -13,19 +15,24 @@ body {
     margin: auto;
     border: 1px solid blue;
 }
+
+
 /*cajas*/
-.box {
+
+.card {
     background-color: #444;
     color: #fff;
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;
 }
- .box.a{
+
+li.a {
     color: blue;
     background-color: aqua;
 }
-.box.b{
+
+li.b {
     color: red;
     background-color: violet;
 }

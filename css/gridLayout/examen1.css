@@ -1,9 +1,37 @@
-.wrapper{
-display: grid;
-grid-gap: 20px;
-background-color: blueviolet;
+body {
+    background-color: cadetblue;
+    margin: 40px;
+    width: auto;
 }
 
-.card{
+.wrapper {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 30px;
+    background-color: darkcyan;
+    border: 3px solid darkred;
+}
 
+.box {
+    margin: 2px;
+    padding: 5px;
+    background-color: darkgoldenrod;
+    border: 3px solid darkred;
+    border-color: darkred;
+    border-radius: 10px;
+    padding-top: 40px;
+}
+
+.a {
+    height: 200px;
+}
+
+.b {
+    height: 100px;
 }
