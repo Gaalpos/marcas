@@ -5,14 +5,12 @@ body {
 }
 
 .wrapper {
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 60%;
-    margin: auto;
+    padding: 10px;
+    /* width: 60%;
+    margin: auto; */
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 200px 150px;
     grid-gap: 30px;
     background-color: darkcyan;
     border: 3px solid darkred;
@@ -28,10 +26,11 @@ body {
     padding-top: 40px;
 }
 
-.a {
+
+/* .a {
     height: 200px;
 }
 
 .b {
     height: 100px;
-}
+} */
