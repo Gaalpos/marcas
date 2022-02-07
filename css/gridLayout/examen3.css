@@ -1,0 +1,19 @@
+body {
+    background-color: grey;
+}
+
+.wrapper {
+    background-color: blueviolet;
+    padding: 20px;
+    width: 90%;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, [columna] 1fr);
+    grid-gap: 10px;
+}
+
+.a {}
+
+.b {}
+
+.c {}
