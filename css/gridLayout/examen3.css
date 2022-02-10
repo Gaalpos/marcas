@@ -4,6 +4,7 @@ body {
 
 .wrapper {
     background-color: rgb(43, 122, 226);
+    border: 2px solid black;
     padding: 20px;
     width: 70%;
     margin: 20px;
@@ -13,29 +14,21 @@ body {
 }
 
 .a {
-    background-color: #444;
-    color: #fff;
+    background-color: rgb(153, 51, 236);
+    color: rgb(255, 255, 255);
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;
+    border: 2px solid black;
 }
 
 .b {
-    background-color: #444;
+    background-color: rgb(226, 23, 23);
     color: #fff;
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;
     grid-column: span 2;
     grid-row: span 2;
-}
-
-.c {
-    background-color: #444;
-    color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    font-size: 150%;
-    grid-column: span 2;
-    grid-row: span 2;
+    border: 2px solid black;
 }
