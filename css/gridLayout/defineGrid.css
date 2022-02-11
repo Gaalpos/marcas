@@ -1,0 +1,41 @@
+body {
+    margin: 40px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "....... cabecera  cabecera" "lateral contenido contenido" "pie pie pie";
+    background-color: #fff;
+    color: #444;
+}
+
+.box {
+    background-color: rgb(103, 81, 173);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.header {
+    background-color: rgb(185, 81, 168);
+}
+
+.sidebar {
+    grid-area: lateral;
+}
+
+.content {
+    grid-area: contenido;
+}
+
+.header {
+    grid-area: cabecera;
+}
+
+.pie {
+    grid-area: pie;
+    background-color: rgb(90, 136, 223);
+}
