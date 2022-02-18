@@ -14,10 +14,11 @@ body {
     grid-gap: 10px;
 }
 
-.envoltorio {
+
+/* .envoltorio {
     grid-template-columns: 200px, 300px;
     grid-template-rows: repeat(2, [filaa] 1fr);
-}
+} */
 
 .box {
     background-color: rgb(153, 51, 236);
