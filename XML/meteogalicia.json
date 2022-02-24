@@ -1,0 +1,18 @@
+{
+    "predConcello": {
+        "idConcello": 36057,
+        "listaPredDiaConcello": [{ "ceo": { "manha": 103, "noite": 201, "tarde": 102 }, "dataPredicion": "2022-02-24T00:00:00", "nivelAviso": 0, "pchoiva": { "manha": 5, "noite": 5, "tarde": 5 }, "tMax": 18, "tMin": 7, "tmaxFranxa": null, "tminFranxa": null, "uvMax": 2, "vento": { "manha": 302, "noite": 302, "tarde": 301 } }, { "ceo": { "manha": 101, "noite": 201, "tarde": 101 }, "dataPredicion": "2022-02-25T00:00:00", "nivelAviso": 0, "pchoiva": { "manha": 5, "noite": 5, "tarde": 5 }, "tMax": 20, "tMin": 7, "tmaxFranxa": null, "tminFranxa": null, "uvMax": 2, "vento": { "manha": 303, "noite": 303, "tarde": 303 } }, { "ceo": { "manha": 101, "noite": 204, "tarde": 103 }, "dataPredicion": "2022-02-26T00:00:00", "nivelAviso": 0, "pchoiva": { "manha": 5, "noite": 5, "tarde": 5 }, "tMax": 21, "tMin": 9, "tmaxFranxa": null, "tminFranxa": null, "uvMax": 3, "vento": { "manha": 304, "noite": 299, "tarde": 307 } }, {
+            "ceo": { "manha": 101, "noite": 203, "tarde": 103 },
+            "dataPredicion": "2022-02-27T00:00:00",
+            "nivelAviso": null,
+            "pchoiva": { "manha": 5, "noite": 5, "tarde": 5 },
+            "tMax": 20,
+            "tMin": 7,
+            "tmaxFranxa": null,
+            "tminFranxa": null,
+            "uvMax": -9999,
+            "vento": { "manha": 304, "noite": 304, "tarde": 307 }
+        }],
+        "nome": "Vigo"
+    }
+}
