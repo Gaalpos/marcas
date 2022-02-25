@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="desayuno" type="desayunoType"/>
+  <xs:complexType name="comidaType">
+    <xs:sequence>
+      <xs:element name="nombre">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Belgian Waffles"/>
+            <xs:enumeration value="Strawberry Belgian Waffles"/>
+            <xs:enumeration value="Berry-Berry Belgian Waffles"/>
+            <xs:enumeration value="French Toast"/>
+            <xs:enumeration value="Homestyle Breakfast"/>
+            <xs:enumeration value="Lacón con grelos"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="precio">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="$5.95"/>
+            <xs:enumeration value="$7.95"/>
+            <xs:enumeration value="$8.95"/>
+            <xs:enumeration value="$4.50"/>
+            <xs:enumeration value="$6.95"/>
+            <xs:enumeration value="$13.95"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="descripcion">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="
+   Two of our famous Belgian Waffles with plenty of real maple syrup
+   "/>
+            <xs:enumeration value="
+    Light Belgian waffles covered with strawberries and whipped cream
+    "/>
+            <xs:enumeration value="
+    Belgian waffles covered with assorted fresh berries and whipped cream
+    "/>
+            <xs:enumeration value="
+    Thick slices made from our homemade sourdough bread
+    "/>
+            <xs:enumeration value="
+    Two eggs, bacon or sausage, toast, and our ever-popular hash browns
+    "/>
+            <xs:enumeration value="
+    Buen lacón gon greliñios
+    "/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="calorias">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="650"/>
+            <xs:enumeration value="900"/>
+            <xs:enumeration value="600"/>
+            <xs:enumeration value="950"/>
+            <xs:enumeration value="9150"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="desayunoType">
+    <xs:sequence>
+      <xs:element type="comidaType" name="comida" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

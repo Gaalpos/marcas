@@ -1,0 +1,37 @@
+{
+    "listaPredicions": [{
+        "comentario": "Hoxe venres Galicia recupera progresivamente a influencia anticiclónica, cunha circulación moi marcada do nordés. Con esta situación, agárdanse ceos despexados en xeral, con algunha nube no extremo norte, onde mesmo non se descarta algún chuvasco ás primeiras horas. As temperaturas non terán cambios significativos. Os ventos soprarán do nordés, moderados no interior, fortes no  litoral e zonas altas.",
+        "comentarioEsp": "",
+        "dataActualizacion": "2022-02-25T09:04:00",
+        "dataPredicion": "2022-02-25T00:00:00",
+        "dia": 0,
+        "listaMapas": [{ "dia": 0, "franxa": 1, "urlMapa": "\/mgrss\/predicion\/cprazo\/getImaxeM.action?dia=0" },
+            { "dia": 0, "franxa": 2, "urlMapa": "\/mgrss\/predicion\/cprazo\/getImaxeT.action?dia=0" },
+            { "dia": 0, "franxa": 3, "urlMapa": "\/mgrss\/predicion\/cprazo\/getImaxeN.action?dia=0" }
+        ],
+        "tendMax": 401,
+        "tendMin": 404,
+        "titulo": "Predición para o venres 25 de febreiro de 2022"
+    }, {
+        "comentario": "O sábado Galicia queda nunha situación pouco definida entre altas e baixas presións e con fluxo de vento con compoñente leste. Agárdase un día de ceos pouco nubrados en xeral con entrada de nubes de tipo medio e alto desde o sur co avance da tarde, que mesmo poderían deixar algún chuvasco illado e ocasional . As temperaturas seguirán sen cambios significativos,con ascensos das máximas no terzo norte. O vento soprará frouxo de dirección variable, con predominio da compoñente leste.",
+        "comentarioEsp": "",
+        "dataActualizacion": "2022-02-24T10:04:00",
+        "dataPredicion": "2022-02-26T00:00:00",
+        "dia": 1,
+        "listaMapas": [{ "dia": 1, "franxa": 1, "urlMapa": "\/mgrss\/predicion\/cprazo\/getImaxeM.action?dia=1" }, { "dia": 1, "franxa": 2, "urlMapa": "\/mgrss\/predicion\/cprazo\/getImaxeT.action?dia=1" }, { "dia": 1, "franxa": 3, "urlMapa": "\/mgrss\/predicion\/cprazo\/getImaxeN.action?dia=1" }],
+        "tendMax": 401,
+        "tendMin": 404,
+        "titulo": "Predición para o sábado 26 de febreiro de 2022"
+    }, {
+        "comentario": "Aínda durante o domingo agárdase influencia anticiclónica sobre Galicia. Con esta situación, teremos ceos con alternancia de nubes e claros en xeral. As temperaturas continuarán sen cambios ou lixeiros ascensos. Os ventos soprarán frouxos, de dirección variable, con predominio do sueste.",
+        "comentarioEsp": "",
+        "dataActualizacion": "2022-02-24T11:08:00",
+        "dataPredicion": "2022-02-27T00:00:00",
+        "dia": 2,
+        "listaMapas": [{ "dia": 2, "franxa": 1, "urlMapa": "\/mgrss\/predicion\/cprazo\/getImaxeM.action?dia=2" }, { "dia": 2, "franxa": 2, "urlMapa": "\/mgrss\/predicion\/cprazo\/getImaxeT.action?dia=2" }, { "dia": 2, "franxa": 3, "urlMapa": "\/mgrss\/predicion\/cprazo\/getImaxeN.action?dia=2" }],
+        "tendMax": 401,
+        "tendMin": 404,
+        "titulo": "Predición para o domingo 27 de febreiro de 2022"
+    }],
+    "urlBase": "https:\/\/servizos.meteogalicia.gal"
+}
