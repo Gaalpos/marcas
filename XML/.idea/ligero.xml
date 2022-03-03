@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--linkar a este fichero su SCHEMA de DATOS-->
+<root>
+    <location>
+        <nombre>Vigo</nombre>
+        <region>Galicia</region>
+        <pais>Spain</pais>
+        <lat>42.23</lat>
+        <lon>-8.72</lon>
+        <fecha>2022-02-25 9:52</fecha>
+    </location>
+    <current>
+        <last_updated>2022-02-25 09:45</last_updated>
+        <temp_c>8</temp_c>
+        <is_day>1</is_day>
+        <condition>
+            <text>Sunny</text>
+        </condition>
+        <wind_kph>0</wind_kph>
+        <wind_degree>65</wind_degree>
+        <wind_dir>ENE</wind_dir>
+        <pressure_mb>1024</pressure_mb>
+        <precip_mm>0</precip_mm>
+        <humidity>76</humidity>
+        <cloud>0</cloud>
+        <feelslike_c>5.6</feelslike_c>
+        <vis_km>10</vis_km>
+        <uv>1</uv>
+        <gust_kph>25.2</gust_kph>
+    </current>
+</root>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="pred" type="tipoRaiz"/>
+    <xs:complexType name="tipoRaiz">
+        <xs:sequence>
+            <xs:element type="tipoLugar" name="lugar"/>
+            <xs:element type="xs:string" name="region"/>
+            <xs:element type="xs:string" name="pais"/>
+            <xs:element type="xs:string" name="lat"/>
+            <xs:element type="xs:string" name="lon"/>
+            <xs:element type="xs:string" name="fecha"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="conditionType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="text"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="currentType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="last_updated"/>
+            <xs:element type="xs:string" name="temp_c"/>
+            <xs:element type="xs:string" name="is_day"/>
+            <xs:element type="conditionType" name="condition"/>
+            <xs:element type="xs:string" name="wind_kph"/>
+            <xs:element type="xs:string" name="wind_degree"/>
+            <xs:element type="xs:string" name="wind_dir"/>
+            <xs:element type="xs:string" name="pressure_mb"/>
+            <xs:element type="xs:string" name="precip_mm"/>
+            <xs:element type="xs:string" name="humidity"/>
+            <xs:element type="xs:string" name="cloud"/>
+            <xs:element type="xs:string" name="feelslike_c"/>
+            <xs:element type="xs:string" name="vis_km"/>
+            <xs:element type="xs:string" name="uv"/>
+            <xs:element type="xs:string" name="gust_kph"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="rootType">
+        <xs:sequence>
+            <xs:element type="locationType" name="location"/>
+            <xs:element type="currentType" name="current"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
