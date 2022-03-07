@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<aviso  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation= "ejercicio5.xsd">
+    <titulo>Mañana hay huelga</titulo>
+
+    <parrafo> Uno</parrafo>
+    <grafico> Dibujito</grafico>
+
+    <parrafo>Dos</parrafo>
+    <grafico> Otro dibujito</grafico>
+</aviso>

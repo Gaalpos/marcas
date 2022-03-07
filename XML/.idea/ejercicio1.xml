@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<receta  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation= "ejercicio1.xsd">
+
+    <numero>Primera receta</numero>
+    <titulo> Tortilla de patatas </titulo>
+    <ingredientes> Huevos</ingredientes>
+    <ingredientes> Patatas</ingredientes>
+    <ingredientes>Cebolla</ingredientes>
+    <procedimiento>batir huevos</procedimiento>
+    <procedimiento>Freir patatas</procedimiento>
+    <procedimiento>Mezlcar</procedimiento>
+    <procedimiento>Darle la vuelta</procedimiento>
+</receta>

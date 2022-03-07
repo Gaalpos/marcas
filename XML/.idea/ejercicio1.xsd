@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified"
+           elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Declaracion de tipos de elemento RAIZ -->
+    <xs:element name="receta" type="tipoReceta"/>
+    <!-- Declaracion de tipos de elementos complejos -->
+    <xs:complexType name="tipoReceta">
+        <xs:sequence>
+            <xs:element name="numero" type="xs:string"/>
+            <xs:element name="titulo" type="xs:string"/>
+            <xs:element name="ingredientes" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="procedimiento" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
