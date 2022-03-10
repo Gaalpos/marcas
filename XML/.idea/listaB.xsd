@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="lista" type="TipoLista"/>
+
+  <xs:complexType name="TipoLista">
+    <xs:sequence>
+      <xs:element name="alumno" maxOccurs="unbounded" minOccurs="0" type="tipoAlumno"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="tipoAlumno">
+    <xs:sequence>
+      <xs:element name="nombre" type="xs:string" />
+      <xs:element name="edad" type="xs:int" />
+      <xs:element name="email" type="xs:anyURI" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

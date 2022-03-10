@@ -3,16 +3,17 @@
            elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <!-- Declaracion de tipos de elemento RAIZ -->
-    <xs:element name="receta" type="tipoAviso"/>
+
+    <xs:element name="aviso" type="tipoAviso"/>
+
     <!-- Declaracion de tipos de elementos complejos -->
     <xs:complexType name="tipoAviso">
         <xs:sequence>
-            <xs:element name="titulo" type="xs:string"/>
-            <xs:element name="parrafo" type="xs:string"/>
-            <xs:element name="grafico" type="xs:string"/>
-
-
+            <xs:element type="xs:string" name="titulo" maxOccurs="1"/>
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+                <xs:element type="xs:string" name="parrafo"/>
+                <xs:element type="xs:string" name="grafico"/>
+            </xs:choice>
         </xs:sequence>
     </xs:complexType>
-
 </xs:schema>

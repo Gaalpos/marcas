@@ -5,8 +5,12 @@
     <titulo>Mañana hay huelga</titulo>
 
     <parrafo> Uno</parrafo>
-    <grafico> Dibujito</grafico>
+    <grafico>Dibujito</grafico>
 
     <parrafo>Dos</parrafo>
-    <grafico> Otro dibujito</grafico>
+    <grafico>Otro Dibujito</grafico>
+
+    <parrafo>Tres</parrafo>
+    <grafico> Otro Dibujito</grafico>
+
 </aviso>

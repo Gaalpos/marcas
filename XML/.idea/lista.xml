@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<lista xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation= "listaB.xsd">
+    <alumno>
+        <nombre>Pepe  Viyuela</nombre>
+        <edad> 56</edad>
+        <email> pepito@gmail.com </email>
+    </alumno>
+    <alumno>
+        <nombre> Manu Chei </nombre>
+        <edad> 23</edad>
+        <email> manueles@gmail.com </email>
+    </alumno>
+    <alumno>
+        <nombre>Gabriel Pazos</nombre>
+        <edad> 21</edad>
+        <email> gabripazos13@gmail.com </email>
+    </alumno>
+    <alumno>
+        <nombre> Carmelo España </nombre>
+        <edad> 20</edad>
+        <email> españa@gmail.com </email>
+    </alumno>
+    <alumno>
+        <nombre> Adrián Alonso </nombre>
+        <edad> 27 </edad>
+        <email> adiral@yahoo.com </email>
+    </alumno>
+
+</lista>

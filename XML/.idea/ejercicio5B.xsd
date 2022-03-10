@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="aviso" type="avisoType"/>
+  <xs:complexType name="avisoType">
+    <xs:choice maxOccurs="unbounded" minOccurs="0">
+      <xs:element type="xs:string" name="titulo"/>
+      <xs:element type="xs:string" name="parrafo"/>
+      <xs:element name="grafico">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value=" Dibujito"/>
+            <xs:enumeration value="Dos"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:choice>
+  </xs:complexType>
+</xs:schema>
