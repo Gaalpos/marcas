@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="musica" type="TipoMusica"/>
+
+    <xs:complexType name="TipoMusica">
+        <xs:sequence>
+            <xs:element name="musicos" maxOccurs="unbounded" minOccurs="0" type="tipoMusicos"/>
+            <xs:element name="obras" maxOccurs="unbounded" minOccurs="0" type="tipoObras"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoMusicos">
+        <xs:sequence>
+            <xs:element name="musico" type="xs:string" id="any" />
+            <xs:element name="fechas" type="xs:string" />
+            <xs:element name="pais" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tipoObras">
+        <xs:sequence>
+            <xs:element name="autor" type="xs:string" />
+            <xs:element name="nombre" type="xs:string" />
+           <generero>
+               <instrumento></instrumento>
+           </generero>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

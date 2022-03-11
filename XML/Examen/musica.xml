@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<musica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation= "musicaGenerated.xsd.xsd">
+    <musicos>
+        <musico id="Vivaldi">
+            <nombre>Antonio Vivaldi</nombre>
+            <fechas nacimiento="1678" muerte="1741" />
+            <pais>Italia</pais>
+        </musico>
+        <musico id="Bach">
+            <nombre>Johann Sebastian Bach</nombre>
+            <fechas nacimiento="1685" muerte="1750" />
+            <pais>Alemania</pais>
+        </musico>
+        <musico id="Mozart">
+            <nombre>Wolfgang Amadeus Mozart</nombre>
+            <fechas nacimiento="1756" muerte="1791" />
+            <pais>Austria</pais>
+        </musico>
+        <musico id="Beethoven">
+            <nombre>Ludwig van Beethoven</nombre>
+            <fechas nacimiento="1770" muerte="1827" />
+            <pais>Alemania</pais>
+        </musico>
+        <musico id="Verdi">
+            <nombre>Giussepe Verdi</nombre>
+            <fechas nacimiento="1813" muerte="1901" />
+            <pais>Italia</pais>
+        </musico>
+    </musicos>
+    <obras>
+        <obra>
+            <autor>Vivaldi</autor>
+            <nombre>Las cuatro estaciones</nombre>
+            <genero nombre="concierto">
+                <instrumento>violín</instrumento>
+                <instrumento>orquesta</instrumento>
+            </genero>
+        </obra>
+        <obra>
+            <autor>Bach</autor>
+            <nombre>Pasión según San Mateo</nombre>
+            <genero nombre="oratorio">
+                <instrumento>tenor</instrumento>
+                <instrumento>barítono</instrumento>
+                <instrumento>bajo</instrumento>
+            </genero>
+        </obra>
+        <obra>
+            <autor>Mozart</autor>
+            <nombre>La flauta mágica</nombre>
+            <genero nombre="ópera">
+                <instrumento>tenor</instrumento>
+                <instrumento>barítono</instrumento>
+                <instrumento>bajo</instrumento>
+            </genero>
+        </obra>
+        <obra>
+            <autor>Mozart</autor>
+            <nombre>Concierto para piano nº 27</nombre>
+            <genero nombre="concierto">
+                <instrumento>piano</instrumento>
+                <instrumento>orquesta</instrumento>
+            </genero>
+        </obra>
+        <obra>
+            <autor>Beethoven</autor>
+            <nombre>Novena sinfonía</nombre>
+            <genero nombre="sinfonía">
+                <instrumento>orquesta</instrumento>
+                <instrumento>coro</instrumento>
+            </genero>
+        </obra>
+        <obra>
+            <autor>Verdi</autor>
+            <nombre>La Traviata</nombre>
+            <genero nombre="ópera">
+                <instrumento>soprano</instrumento>
+                <instrumento>tenor</instrumento>
+            </genero>
+        </obra>
+        <obra>
+            <autor>Beethoven</autor>
+            <nombre>Concierto para piano nº 5</nombre>
+            <genero nombre="concierto">
+                <instrumento>piano</instrumento>
+                <instrumento>orquesta</instrumento>
+            </genero>
+        </obra>
+    </obras>
+</musica>

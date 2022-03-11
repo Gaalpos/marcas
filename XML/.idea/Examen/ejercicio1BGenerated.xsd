@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="musica" type="musicaType"/>
+  <xs:complexType name="fechasType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="nacimiento" use="optional"/>
+        <xs:attribute type="xs:string" name="muerte" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="musicoType">
+    <xs:sequence>
+      <xs:element name="nombre">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Antonio Vivaldi"/>
+            <xs:enumeration value="Johann Sebastian Bach"/>
+            <xs:enumeration value="Wolfgang Amadeus Mozart"/>
+            <xs:enumeration value="Ludwig van Beethoven"/>
+            <xs:enumeration value="Giussepe Verdi"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="fechasType" name="fechas"/>
+      <xs:element name="pais">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Italia"/>
+            <xs:enumeration value="Alemania"/>
+            <xs:enumeration value="Austria"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="musicosType">
+    <xs:sequence>
+      <xs:element type="musicoType" name="musico" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="generoType">
+    <xs:sequence>
+      <xs:element name="instrumento" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="tenor"/>
+            <xs:enumeration value="barítono"/>
+            <xs:enumeration value="bajo"/>
+            <xs:enumeration value="piano"/>
+            <xs:enumeration value="orquesta"/>
+            <xs:enumeration value="coro"/>
+            <xs:enumeration value="soprano"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="nombre" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="obraType">
+    <xs:sequence>
+      <xs:element name="autor">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Bach"/>
+            <xs:enumeration value="Mozart"/>
+            <xs:enumeration value="Beethoven"/>
+            <xs:enumeration value="Verdi"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="nombre">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Pasión según San Mateo"/>
+            <xs:enumeration value="La flauta mágica"/>
+            <xs:enumeration value="Concierto para piano nº 27"/>
+            <xs:enumeration value="Novena sinfonía"/>
+            <xs:enumeration value="La Traviata"/>
+            <xs:enumeration value="Concierto para piano nº 5"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="generoType" name="genero"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obrasType">
+    <xs:sequence>
+      <xs:element type="obraType" name="obra" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="musicaType">
+    <xs:sequence>
+      <xs:element type="musicosType" name="musicos"/>
+      <xs:element type="obrasType" name="obras"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

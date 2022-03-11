@@ -1,46 +1,49 @@
 body {
     margin: 40px;
-    }
-    
-    .wrapper {
+}
+
+.wrapper {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 100px 100px 100px;
     background-color: #fff;
     color: #444;
-    }
-    
-    .box {
+}
+
+.box {
     background-color: #444;
     color: #fff;
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;
-    
-    }
-    
-    .a {
+}
+
+.a {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    }
-    .b {
+}
+
+.b {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    }
-    .c {
+}
+
+.c {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
-    }
-    .d {
+}
+
+.d {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    }
-    .e {
+}
+
+.e {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    }
-    
-    .f {
+}
+
+.f {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
-    }
+}
