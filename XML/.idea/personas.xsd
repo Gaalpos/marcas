@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- OJO DECLARA DOS ESAPACIOS DE NOMBRES
+
+-->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="lista_personas" type="tipoLista"/>
+
+    <xs:complexType name="tipoLista">
+        <xs:sequence>
+            <xs:element name="persona" type="tipoPersona" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoPersona">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="fecha_nacimiento" type="tipoFecha"/>
+            <xs:element name="sexo" type="enumSexo" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoFecha">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{2}-\d{2}-\d{4}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="enumSexo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="mujer"/>
+            <xs:enumeration value="varón"/>
+            <xs:enumeration value="otros"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

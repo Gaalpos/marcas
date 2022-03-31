@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<lista_personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:noNamespaceSchemaLocation= "personas.xsd">
+    <persona>
+        <nombre>Pepe</nombre>
+        <fecha_nacimiento>10-04-2023</fecha_nacimiento>
+        <sexo>varón</sexo>
+    </persona>
+    <persona>
+        <nombre>Angela</nombre>
+        <fecha_nacimiento>12-03-2023</fecha_nacimiento>
+        <sexo>mujer</sexo>
+    </persona>
+</lista_personas>
