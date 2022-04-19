@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+    <xs:element name="lista_de_notas" type="tipoListaNotas"/>
+
+    <xs:complexType name="tipoListaNotas">
+        <xs:sequence>
+            <xs:element name="nota" type="tipoNota" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoNota">
+        <xs:sequence>
+            <xs:element name="para" type="xs:string"/>
+            <xs:element name="de" type="xs:string"/>
+            <xs:element name="titulo" type="xs:string"/>
+            <xs:element name="contenido" type="xs:string"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="datosNota"/>
+    </xs:complexType>
+
+    <xs:attributeGroup name="datosNota">
+        <xs:attribute name="dia"  type="xs:string" use="optional" default="01/01/2001"/>
+        <xs:attribute name="hora" type="xs:string" use="optional" default="00:00"/>
+    </xs:attributeGroup>
+</xs:schema>

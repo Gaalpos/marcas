@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+    <xs:element name="vehiculos" type="tipoVehiculos"/>
+
+    <xs:complexType name="tipoVehiculos">
+        <xs:sequence>
+            <xs:element name="vehiculo" type="tipoVehiculo" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoVehiculo">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="modelo" type="xs:string"/>
+            <xs:element name="fabricacion" type="tipoFabricacion"/>
+            <xs:element name="modificaciones" type="tipoModificaciones"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoFabricacion">
+        <xs:sequence>
+            <xs:element name="inicio" type="tipoFecha"/>
+            <xs:element name="fin" type="tipoFecha"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoFecha">
+        <xs:sequence>
+            <xs:element name="dia" type="xs:string"/>
+            <xs:element name="mes" type="xs:string"/>
+            <xs:element name="anyo" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoModificaciones">
+        <xs:sequence>
+            <xs:element name="modificacion" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+    <xs:element name="informes" type="tipoInformes"/>
+
+    <xs:complexType name="tipoInformes">
+        <xs:sequence>
+            <xs:element name="informe" type="tipoInforme" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoInforme" >
+        <xs:sequence>
+            <xs:element name="cabecera" type="tipoCabecera" minOccurs="1" />
+            <xs:element name="datos" type="tipoDatos" minOccurs="1"/>
+        </xs:sequence>
+
+    </xs:complexType>
+
+    <xs:complexType name="tipoCabecera">
+        <xs:sequence>
+            <xs:element name="edicion" type="xs:string" minOccurs="1"/>
+            <xs:element name="informeRegional" type="xs:string" default="Informe regional de Ventas" minOccurs="1"/>
+            <xs:element name="descripcion" type="xs:string" minOccurs="1"/>
+
+        </xs:sequence>
+        <xs:attribute name="fecha" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="tipoDatos">
+        <xs:sequence>
+            <xs:element name="region" type="tipoRegion" minOccurs="1" maxOccurs="3"/>
+
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoRegion" >
+        <xs:sequence minOccurs="4" maxOccurs="4">
+            <xs:element name="trimetre" type="tipoTrimestre"   />
+        </xs:sequence>
+        <xs:attribute name="region" type="nombreRegion" use="required" />
+    </xs:complexType>
+
+    <xs:simpleType name="tipoTrimestre" >
+        <xs:attribute name="numero" type="nombreTrimestre" use="required" />
+    </xs:simpleType>
+
+
+    <xs:simpleType name="nombreRegion" >
+        <xs:restriction base="xs:string" >
+            <xs:enumeration value="Norte" />
+            <xs:enumeration value="Centro"/>
+            <xs:enumeration value="Sur"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="nombreTrimestre">
+        <xs:restriction base="xs:int">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="2"/>
+            <xs:enumeration value="3"/>
+            <xs:enumeration value="4"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+
+
+
+</xs:schema>
