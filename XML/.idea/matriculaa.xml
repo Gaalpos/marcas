@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<matricula xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:dat="http://www.avanzado.es/datos"
+           xmlns:doc="http://www.avanzado.es/docencia"
+           xsi:noNamespaceSchemaLocation="matriculaa.xsd">
+
+    <dat:datos
+            xmlns:dat="http://www.avanzado.es/datos">
+        <dat:personal>
+            <dat:dni>99223366M</dat:dni>
+            <dat:nombre>Juan Pardo Martín</dat:nombre>
+            <dat:titulacion>Ingeniería Informática</dat:titulacion>
+            <dat:curso_academico>1997/1998</dat:curso_academico>
+            <dat:domicilios>
+                <dat:domicilio tipo="familiar">
+                    <dat:nombre>C/ Principal nº1</dat:nombre>
+                </dat:domicilio>
+                <dat:domicilio tipo="habitual">
+                    <dat:nombre>C/ Secundaria nº2</dat:nombre>
+                </dat:domicilio>
+            </dat:domicilios>
+        </dat:personal>
+        <dat:pago>
+            <dat:tipo_matricula>Matrícula Ordinaria</dat:tipo_matricula>
+        </dat:pago>
+        <dat:comentario>Es su tercera matricula</dat:comentario>
+    </dat:datos>
+
+    <doc:docencia
+            xmlns:doc="http://www.avanzado.es/docencia">
+        <doc:grupo>1ASIR</doc:grupo>
+        <doc:asignatura>
+            <doc:nombre>Lenguaje de Marcas</doc:nombre>
+            <doc:horas>4</doc:horas>
+            <doc:profesor>Juan Moreno</doc:profesor>
+        </doc:asignatura>
+        <doc:asignatura>
+            <doc:nombre>Fundamentos de Hardware</doc:nombre>
+            <doc:horas>3</doc:horas>
+            <doc:profesor>Virginia López</doc:profesor>
+        </doc:asignatura>
+        <doc:asignatura>
+            <doc:nombre>Ingles Tecnico</doc:nombre>
+            <doc:horas>6</doc:horas>
+            <doc:profesor>Marta Araujo</doc:profesor>
+        </doc:asignatura>
+    </doc:docencia>
+</matricula>

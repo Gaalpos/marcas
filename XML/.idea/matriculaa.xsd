@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--parte del esquema que AGRUPA datos y docencia-->
+<!--ADEMAS DECLARA UN ESPACIO DE NOMBRES PARA LOS MISMOS
+           xmlns:dat="http://www.avanzado.es/datos"
+           xmlns:doc="http://www.avanzado.es/docencia"
+           TODAS LAS REFERENCIAS DEBEN USAR dat: o doc:
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           xmlns:dat="http://www.avanzado.es/datos"
+           xmlns:doc="http://www.avanzado.es/docencia">
+
+    <xs:import namespace="http://www.avanzado.es/datos" schemaLocation="datos.xsd"/>
+    <xs:import namespace="http://www.avanzado.es/docencia" schemaLocation="docencia.xsd"/>
+
+    <xs:element name="matricula">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="dat:datos"/>
+                <xs:element ref="doc:docencia"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+<xs:element name="asigatura"></xs:element>
+
+</xs:schema>

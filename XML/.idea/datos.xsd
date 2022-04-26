@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--parte del esquema que explica los datos-->
+<!--ADEMAS DECLARA UN ESPACIO DE NOMBRES PARA LOS MISMOS
+           xmlns:dat="http://www.avanzado.es/datos"
+           targetNamespace="http://www.avanzado.es/datos"
+           TODAS LAS REFERENCIAS DEBEN USAR dat:
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           xmlns:dat="http://www.avanzado.es/datos"
+           targetNamespace="http://www.avanzado.es/datos"
+           attributeFormDefault="unqualified">
+
+    <!-- ELEMENTO RAIZ de este NIVEL-->
+    <xs:element name="datos" >
+        <xs:complexType >
+            <xs:sequence>
+                <xs:element ref="dat:personal" />
+                <xs:element ref="dat:pago" />
+                <xs:element name="comentario" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--DECLARACION DE ELEMENTOPOS SU NOMBRE Y NO POR DEFERENCIA-->
+    <xs:element name="personal">
+        <xs:complexType >
+            <xs:sequence>
+                <xs:element name="dni" type="xs:string"/>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="titulacion" type="xs:string"/>
+                <xs:element name="curso_academico" type="xs:string"/>
+                <xs:element ref="dat:domicilios" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="pago">
+        <xs:complexType >
+            <xs:sequence>
+                <xs:element name="tipo_matricula" type="xs:string"/>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="domicilios">
+        <xs:complexType >
+            <xs:sequence>
+                <xs:element ref="dat:domicilio"  maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="domicilio">
+        <xs:complexType >
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="tipo" use="required" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
