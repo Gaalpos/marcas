@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:noNamespaceSchemaLocation="catalogoA.xsd">
+          xsi:noNamespaceSchemaLocation="catalogoB.xsd">
     <libro>
         <titulo>Los hombres que no amaban a las mujeres</titulo>
         <autor>Stieg Larsson</autor>
@@ -22,6 +22,5 @@
         <stock>No</stock>
         <revisor>Luis Rodrigo</revisor>
     </libro>
-
 
 </catalogo>
