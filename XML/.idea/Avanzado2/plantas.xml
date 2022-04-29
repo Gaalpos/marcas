@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CATALOG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="plantas.xsd http://flores.com/"
+        xmlns:bot "http://flores.com/">
+    <bot:PLANT>
+        <bot:COMMON>Bloodroot</bot:COMMON>
+        <bot:BOTANICAL>Sanguinaria canadensis</bot:BOTANICAL>
+        <bot:ZONE>4</bot:ZONE>
+        <bot:LIGHT>Mostly Shady</bot:LIGHT>
+        <bot:PRICE>$2.44</bot:PRICE>
+        <bot:AVAILABILITY>031599</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Columbine</bot:COMMON>
+        <bot:BOTANICAL>Aquilegia canadensis</bot:BOTANICAL>
+        <bot:ZONE>3</bot:ZONE>
+        <bot:LIGHT>Mostly Shady</bot:LIGHT>
+        <bot:PRICE>$9.37</bot:PRICE>
+        <bot:AVAILABILITY>030699</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Marsh Marigold</bot:COMMON>
+        <bot:BOTANICAL>Caltha palustris</bot:BOTANICAL>
+        <bot:ZONE>4</bot:ZONE>
+        <bot:LIGHT>Mostly Sunny</bot:LIGHT>
+        <bot:PRICE>$6.81</bot:PRICE>
+        <bot:AVAILABILITY>051799</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Cowslip</bot:COMMON>
+        <bot:BOTANICAL>Caltha palustris</bot:BOTANICAL>
+        <bot:ZONE>4</bot:ZONE>
+        <bot:LIGHT>Mostly Shady</bot:LIGHT>
+        <bot:PRICE>$9.90</bot:PRICE>
+        <bot:AVAILABILITY>030699</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Dutchman's-Breeches</bot:COMMON>
+        <bot:BOTANICAL>Dicentra cucullaria</bot:BOTANICAL>
+        <bot:ZONE>3</bot:ZONE>
+        <bot:LIGHT>Mostly Shady</bot:LIGHT>
+        <bot:PRICE>$6.44</bot:PRICE>
+        <bot:AVAILABILITY>012099</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Ginger, Wild</bot:COMMON>
+        <bot:BOTANICAL>Asarum canadense</bot:BOTANICAL>
+        <bot:ZONE>3</bot:ZONE>
+        <bot:LIGHT>Mostly Shady</bot:LIGHT>
+        <bot:PRICE>$9.03</bot:PRICE>
+        <bot:AVAILABILITY>041899</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Hepatica</bot:COMMON>
+        <bot:BOTANICAL>Hepatica americana</bot:BOTANICAL>
+        <bot:ZONE>4</bot:ZONE>
+        <bot:LIGHT>Mostly Shady</bot:LIGHT>
+        <bot:PRICE>$4.45</bot:PRICE>
+        <bot:AVAILABILITY>012699</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Liverleaf</bot:COMMON>
+        <bot:BOTANICAL>Hepatica americana</bot:BOTANICAL>
+        <bot:ZONE>4</bot:ZONE>
+        <bot:LIGHT>Mostly Shady</bot:LIGHT>
+        <bot:PRICE>$3.99</bot:PRICE>
+        <bot:AVAILABILITY>010299</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Jack-In-The-Pulpit</bot:COMMON>
+        <bot:BOTANICAL>Arisaema triphyllum</bot:BOTANICAL>
+        <bot:ZONE>4</bot:ZONE>
+        <bot:LIGHT>Mostly Shady</bot:LIGHT>
+        <bot:PRICE>$3.23</bot:PRICE>
+        <bot:AVAILABILITY>020199</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Mayapple</bot:COMMON>
+        <bot:BOTANICAL>Podophyllum peltatum</bot:BOTANICAL>
+        <bot:ZONE>3</bot:ZONE>
+        <bot:LIGHT>Mostly Shady</bot:LIGHT>
+        <bot:PRICE>$2.98</bot:PRICE>
+        <bot:AVAILABILITY>060599</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Phlox, Woodland</bot:COMMON>
+        <bot:BOTANICAL>Phlox divaricata</bot:BOTANICAL>
+        <bot:ZONE>3</bot:ZONE>
+        <bot:LIGHT>Sun or Shade</bot:LIGHT>
+        <bot:PRICE>$2.80</bot:PRICE>
+        <bot:AVAILABILITY>012299</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Phlox, Blue</bot:COMMON>
+        <bot:BOTANICAL>Phlox divaricata</bot:BOTANICAL>
+        <bot:ZONE>3</bot:ZONE>
+        <bot:LIGHT>Sun or Shade</bot:LIGHT>
+        <bot:PRICE>$5.59</bot:PRICE>
+        <bot:AVAILABILITY>021699</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Spring-Beauty</bot:COMMON>
+        <bot:BOTANICAL>Claytonia Virginica</bot:BOTANICAL>
+        <bot:ZONE>7</bot:ZONE>
+        <bot:LIGHT>Mostly Shady</bot:LIGHT>
+        <bot:PRICE>$6.59</bot:PRICE>
+        <bot:AVAILABILITY>020199</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Trillium</bot:COMMON>
+        <bot:BOTANICAL>Trillium grandiflorum</bot:BOTANICAL>
+        <bot:ZONE>5</bot:ZONE>
+        <bot:LIGHT>Sun or Shade</bot:LIGHT>
+        <bot:PRICE>$3.90</bot:PRICE>
+        <bot:AVAILABILITY>042999</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Wake Robin</bot:COMMON>
+        <bot:BOTANICAL>Trillium grandiflorum</bot:BOTANICAL>
+        <bot:ZONE>5</bot:ZONE>
+        <bot:LIGHT>Sun or Shade</bot:LIGHT>
+        <bot:PRICE>$3.20</bot:PRICE>
+        <bot:AVAILABILITY>022199</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Violet, Dog-Tooth</bot:COMMON>
+        <bot:BOTANICAL>Erythronium americanum</bot:BOTANICAL>
+        <bot:ZONE>4</bot:ZONE>
+        <bot:LIGHT>Shade</bot:LIGHT>
+        <bot:PRICE>$9.04</bot:PRICE>
+        <bot:AVAILABILITY>020199</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Trout Lily</bot:COMMON>
+        <bot:BOTANICAL>Erythronium americanum</bot:BOTANICAL>
+        <bot:ZONE>4</bot:ZONE>
+        <bot:LIGHT>Shade</bot:LIGHT>
+        <bot:PRICE>$6.94</bot:PRICE>
+        <bot:AVAILABILITY>032499</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Adder's-Tongue</bot:COMMON>
+        <bot:BOTANICAL>Erythronium americanum</bot:BOTANICAL>
+        <bot:ZONE>4</bot:ZONE>
+        <bot:LIGHT>Shade</bot:LIGHT>
+        <bot:PRICE>$9.58</bot:PRICE>
+        <bot:AVAILABILITY>041399</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Anemone</bot:COMMON>
+        <bot:BOTANICAL>Anemone blanda</bot:BOTANICAL>
+        <bot:ZONE>6</bot:ZONE>
+        <bot:LIGHT>Mostly Shady</bot:LIGHT>
+        <bot:PRICE>$8.86</bot:PRICE>
+        <bot:AVAILABILITY>122698</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Grecian Windflower</bot:COMMON>
+        <bot:BOTANICAL>Anemone blanda</bot:BOTANICAL>
+        <bot:ZONE>6</bot:ZONE>
+        <bot:LIGHT>Mostly Shady</bot:LIGHT>
+        <bot:PRICE>$9.16</bot:PRICE>
+        <bot:AVAILABILITY>071099</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Bee Balm</bot:COMMON>
+        <bot:BOTANICAL>Monarda didyma</bot:BOTANICAL>
+        <bot:ZONE>4</bot:ZONE>
+        <bot:LIGHT>Shade</bot:LIGHT>
+        <bot:PRICE>$4.59</bot:PRICE>
+        <bot:AVAILABILITY>050399</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Bergamot</bot:COMMON>
+        <bot:BOTANICAL>Monarda didyma</bot:BOTANICAL>
+        <bot:ZONE>4</bot:ZONE>
+        <bot:LIGHT>Shade</bot:LIGHT>
+        <bot:PRICE>$7.16</bot:PRICE>
+        <bot:AVAILABILITY>042799</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Black-Eyed Susan</bot:COMMON>
+        <bot:BOTANICAL>Rudbeckia hirta</bot:BOTANICAL>
+        <bot:ZONE>Annual</bot:ZONE>
+        <bot:LIGHT>Sunny</bot:LIGHT>
+        <bot:PRICE>$9.80</bot:PRICE>
+        <bot:AVAILABILITY>061899</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Buttercup</bot:COMMON>
+        <bot:BOTANICAL>Ranunculus</bot:BOTANICAL>
+        <bot:ZONE>4</bot:ZONE>
+        <bot:LIGHT>Shade</bot:LIGHT>
+        <bot:PRICE>$2.57</bot:PRICE>
+        <bot:AVAILABILITY>061099</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Crowfoot</bot:COMMON>
+        <bot:BOTANICAL>Ranunculus</bot:BOTANICAL>
+        <bot:ZONE>4</bot:ZONE>
+        <bot:LIGHT>Shade</bot:LIGHT>
+        <bot:PRICE>$9.34</bot:PRICE>
+        <bot:AVAILABILITY>040399</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Butterfly Weed</bot:COMMON>
+        <bot:BOTANICAL>Asclepias tuberosa</bot:BOTANICAL>
+        <bot:ZONE>Annual</bot:ZONE>
+        <bot:LIGHT>Sunny</bot:LIGHT>
+        <bot:PRICE>$2.78</bot:PRICE>
+        <bot:AVAILABILITY>063099</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Cinquefoil</bot:COMMON>
+        <bot:BOTANICAL>Potentilla</bot:BOTANICAL>
+        <bot:ZONE>Annual</bot:ZONE>
+        <bot:LIGHT>Shade</bot:LIGHT>
+        <bot:PRICE>$7.06</bot:PRICE>
+        <bot:AVAILABILITY>052599</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Primrose</bot:COMMON>
+        <bot:BOTANICAL>Oenothera</bot:BOTANICAL>
+        <bot:ZONE>3 - 5</bot:ZONE>
+        <bot:LIGHT>Sunny</bot:LIGHT>
+        <bot:PRICE>$6.56</bot:PRICE>
+        <bot:AVAILABILITY>013099</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Gentian</bot:COMMON>
+        <bot:BOTANICAL>Gentiana</bot:BOTANICAL>
+        <bot:ZONE>4</bot:ZONE>
+        <bot:LIGHT>Sun or Shade</bot:LIGHT>
+        <bot:PRICE>$7.81</bot:PRICE>
+        <bot:AVAILABILITY>051899</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Blue Gentian</bot:COMMON>
+        <bot:BOTANICAL>Gentiana</bot:BOTANICAL>
+        <bot:ZONE>4</bot:ZONE>
+        <bot:LIGHT>Sun or Shade</bot:LIGHT>
+        <bot:PRICE>$8.56</bot:PRICE>
+        <bot:AVAILABILITY>050299</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Jacob's Ladder</bot:COMMON>
+        <bot:BOTANICAL>Polemonium caeruleum</bot:BOTANICAL>
+        <bot:ZONE>Annual</bot:ZONE>
+        <bot:LIGHT>Shade</bot:LIGHT>
+        <bot:PRICE>$9.26</bot:PRICE>
+        <bot:AVAILABILITY>022199</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Greek Valerian</bot:COMMON>
+        <bot:BOTANICAL>Polemonium caeruleum</bot:BOTANICAL>
+        <bot:ZONE>Annual</bot:ZONE>
+        <bot:LIGHT>Shade</bot:LIGHT>
+        <bot:PRICE>$4.36</bot:PRICE>
+        <bot:AVAILABILITY>071499</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>California Poppy</bot:COMMON>
+        <bot:BOTANICAL>Eschscholzia californica</bot:BOTANICAL>
+        <bot:ZONE>Annual</bot:ZONE>
+        <bot:LIGHT>Sun</bot:LIGHT>
+        <bot:PRICE>$7.89</bot:PRICE>
+        <bot:AVAILABILITY>032799</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Shooting Star</bot:COMMON>
+        <bot:BOTANICAL>Dodecatheon</bot:BOTANICAL>
+        <bot:ZONE>Annual</bot:ZONE>
+        <bot:LIGHT>Mostly Shady</bot:LIGHT>
+        <bot:PRICE>$8.60</bot:PRICE>
+        <bot:AVAILABILITY>051399</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Snakeroot</bot:COMMON>
+        <bot:BOTANICAL>Cimicifuga</bot:BOTANICAL>
+        <bot:ZONE>Annual</bot:ZONE>
+        <bot:LIGHT>Shade</bot:LIGHT>
+        <bot:PRICE>$5.63</bot:PRICE>
+        <bot:AVAILABILITY>071199</bot:AVAILABILITY>
+    </bot:PLANT>
+    <bot:PLANT>
+        <bot:COMMON>Cardinal Flower</bot:COMMON>
+        <bot:BOTANICAL>Lobelia cardinalis</bot:BOTANICAL>
+        <bot:ZONE>2</bot:ZONE>
+        <bot:LIGHT>Shade</bot:LIGHT>
+        <bot:PRICE>$3.02</bot:PRICE>
+        <bot:AVAILABILITY>022299</bot:AVAILABILITY>
+    </bot:PLANT>
+</CATALOG>

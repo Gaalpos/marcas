@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+    <xs:element name="CATALOG" type="tipoCatalogo"/>
+
+    <xs:complexType name="tipoCatalogo">
+        <xs:sequence>
+            <xs:element name="PLANT" type="tipoPlanta" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoPlanta" >
+        <xs:sequence>
+            <xs:element name="COMMON" type="xs:string"/>
+            <xs:element name="BOTANICAL" type="xs:string"/>
+            <xs:element name="ZONE" type="xs:string"/>
+            <xs:element name="LIGHT" type="xs:string"/>
+            <xs:element name="PRICE" type="xs:string"/>
+            <xs:element name="AVAILABILITY" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--no deberia ser Schema Location?-->
+
+<cata:catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="catalogoAD.xsd http://www.cebem.net/cata"
+               xmlns:cata="http://www.cebem.net/cata">
+
+    <cata:libro>
+        <cata:titulo>Los hombres que no amaban a las mujeres</cata:titulo>
+        <cata:autor>Stieg Larsson</cata:autor>
+        <cata:fecha>2008</cata:fecha>
+        <cata:isbn>978-84-233-4044-6</cata:isbn>
+        <cata:editorial>Destino</cata:editorial>
+        <cata:categoria>Ficcion</cata:categoria>
+        <cata:stock>Si</cata:stock>
+        <cata:revisor></cata:revisor>
+    </cata:libro>
+
+    <cata:libro>
+        <cata:titulo>Java a traves de ejemplos</cata:titulo>
+        <cata:autor>Jesus Bobadilla, Adela Sancho</cata:autor>
+        <cata:fecha>Enero 2003</cata:fecha>
+        <cata:isbn>84-7897-549-7</cata:isbn>
+        <cata:editorial>Ra-Ma</cata:editorial>
+        <cata:categoria>No ficcion</cata:categoria>
+        <cata:stock>No</cata:stock>
+        <cata:revisor>Luis Rodrigo</cata:revisor>
+    </cata:libro>
+</cata:catalogo>
