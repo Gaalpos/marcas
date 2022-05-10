@@ -1,0 +1,13 @@
+.container {
+    border: 2ps solid rgb(206, 28, 173);
+    padding: 5px;
+}
+
+.row {
+    border: 2px solid purple;
+    padding: 10px;
+}
+
+.ptt {
+    background-color: blueviolet;
+}
