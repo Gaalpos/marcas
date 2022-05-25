@@ -1,0 +1,48 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.body {
+    background-color: rgb(234, 169, 84);
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: #8064A2 !important;
+}
+
+.color1 {
+    background-color: #f09792;
+}
+
+.color2 {
+    background-color: #a3f092;
+}
+
+.color3 {
+    background-color: #92e5f0;
+}
+
+.color4 {
+    background-color: #e5f092;
+}
+
+.color5 {
+    background-color: #f0b192;
+}
+
+.color6 {
+    background-color: #c492f0;
+}
