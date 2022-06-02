@@ -2,9 +2,9 @@
 
 <!--no deberia ser Schema Location?-->
 
-<cata:catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xsi:schemaLocation="catalogoAD.xsd http://www.cebem.net/cata"
-               xmlns:cata="http://www.cebem.net/cata">
+    <cata:catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="catalogoAD.xsd http://www.cebem.net/cata"
+                   xmlns:cata="http://www.cebem.net/cata">
 
     <cata:libro>
         <cata:titulo>Los hombres que no amaban a las mujeres</cata:titulo>

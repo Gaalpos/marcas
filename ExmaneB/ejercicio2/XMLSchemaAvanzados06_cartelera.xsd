@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:car="http://cartelera.com/car"
+           targetNamespace="http://cartelera.com/car"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+    <xs:element name="cartelera"/>
+
+    <xs:complexType name="cartelera">
+        <xs:sequence>
+            <xs:element name="película" type="tipoPelicula" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="tipoPelicula">
+        <xs:sequence>
+            <xs:element name="título" type="xs:string" />
+            <xs:element name="título_original" type="xs:string" minOccurs="0"/>
+            <xs:element name="nacionalidad" type="xs:string" />
+            <xs:element name="género" type="xs:string" />
+            <xs:element name="clasificación" type="xs:string" />
+            <xs:element name="sinopsis" type="xs:string" />
+            <xs:element name="director" type="xs:string" />
+            <xs:element name="reparto" type="tipoReparto" />
+            <xs:element name="web" type="xs:string" minOccurs="0" />
+            <xs:element name="cartel" type="xs:anyURI" />
+        </xs:sequence>
+        <xs:attributeGroup ref="datosPeli"/>
+    </xs:complexType>
+
+    <xs:attributeGroup name="datosPeli">
+        <xs:attribute name="codigo"  type="xs:int" use="optional" default="1"/>
+        <xs:attribute name="duración" type="xs:string" use="optional" default="00:00"/>
+        <xs:attribute name="año" type="xs:gYear" use="optional" default="2003"/>
+    </xs:attributeGroup>
+
+
+    <xs:complexType name="tipoReparto">
+        <xs:sequence>
+            <xs:element name="actor" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

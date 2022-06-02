@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fento:CATALOG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="plantas.xsd http://www.plantas.org/"
+         xmlns:fento="http://www.plantas.org/">
+
+    <fento:PLANT>
+        <fento:COMMON>Bloodroot</fento:COMMON>
+        <fento:BOTANICAL>Sanguinaria canadensis</fento:BOTANICAL>
+        <fento:ZONE>4</fento:ZONE>
+        <fento:LIGHT>Mostly Shady</fento:LIGHT>
+        <fento:PRICE>$2.44</fento:PRICE>
+        <fento:AVAILABILITY>031599</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Columbine</fento:COMMON>
+        <fento:BOTANICAL>Aquilegia canadensis</fento:BOTANICAL>
+        <fento:ZONE>3</fento:ZONE>
+        <fento:LIGHT>Mostly Shady</fento:LIGHT>
+        <fento:PRICE>$9.37</fento:PRICE>
+        <fento:AVAILABILITY>030699</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Marsh Marigold</fento:COMMON>
+        <fento:BOTANICAL>Caltha palustris</fento:BOTANICAL>
+        <fento:ZONE>4</fento:ZONE>
+        <fento:LIGHT>Mostly Sunny</fento:LIGHT>
+        <fento:PRICE>$6.81</fento:PRICE>
+        <fento:AVAILABILITY>051799</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Cowslip</fento:COMMON>
+        <fento:BOTANICAL>Caltha palustris</fento:BOTANICAL>
+        <fento:ZONE>4</fento:ZONE>
+        <fento:LIGHT>Mostly Shady</fento:LIGHT>
+        <fento:PRICE>$9.90</fento:PRICE>
+        <fento:AVAILABILITY>030699</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Dutchman's-Breeches</fento:COMMON>
+        <fento:BOTANICAL>Dicentra cucullaria</fento:BOTANICAL>
+        <fento:ZONE>3</fento:ZONE>
+        <fento:LIGHT>Mostly Shady</fento:LIGHT>
+        <fento:PRICE>$6.44</fento:PRICE>
+        <fento:AVAILABILITY>012099</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Ginger, Wild</fento:COMMON>
+        <fento:BOTANICAL>Asarum canadense</fento:BOTANICAL>
+        <fento:ZONE>3</fento:ZONE>
+        <fento:LIGHT>Mostly Shady</fento:LIGHT>
+        <fento:PRICE>$9.03</fento:PRICE>
+        <fento:AVAILABILITY>041899</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Hepatica</fento:COMMON>
+        <fento:BOTANICAL>Hepatica americana</fento:BOTANICAL>
+        <fento:ZONE>4</fento:ZONE>
+        <fento:LIGHT>Mostly Shady</fento:LIGHT>
+        <fento:PRICE>$4.45</fento:PRICE>
+        <fento:AVAILABILITY>012699</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Liverleaf</fento:COMMON>
+        <fento:BOTANICAL>Hepatica americana</fento:BOTANICAL>
+        <fento:ZONE>4</fento:ZONE>
+        <fento:LIGHT>Mostly Shady</fento:LIGHT>
+        <fento:PRICE>$3.99</fento:PRICE>
+        <fento:AVAILABILITY>010299</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Jack-In-The-Pulpit</fento:COMMON>
+        <fento:BOTANICAL>Arisaema triphyllum</fento:BOTANICAL>
+        <fento:ZONE>4</fento:ZONE>
+        <fento:LIGHT>Mostly Shady</fento:LIGHT>
+        <fento:PRICE>$3.23</fento:PRICE>
+        <fento:AVAILABILITY>020199</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Mayapple</fento:COMMON>
+        <fento:BOTANICAL>Podophyllum peltatum</fento:BOTANICAL>
+        <fento:ZONE>3</fento:ZONE>
+        <fento:LIGHT>Mostly Shady</fento:LIGHT>
+        <fento:PRICE>$2.98</fento:PRICE>
+        <fento:AVAILABILITY>060599</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Phlox, Woodland</fento:COMMON>
+        <fento:BOTANICAL>Phlox divaricata</fento:BOTANICAL>
+        <fento:ZONE>3</fento:ZONE>
+        <fento:LIGHT>Sun or Shade</fento:LIGHT>
+        <fento:PRICE>$2.80</fento:PRICE>
+        <fento:AVAILABILITY>012299</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Phlox, Blue</fento:COMMON>
+        <fento:BOTANICAL>Phlox divaricata</fento:BOTANICAL>
+        <fento:ZONE>3</fento:ZONE>
+        <fento:LIGHT>Sun or Shade</fento:LIGHT>
+        <fento:PRICE>$5.59</fento:PRICE>
+        <fento:AVAILABILITY>021699</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Spring-Beauty</fento:COMMON>
+        <fento:BOTANICAL>Claytonia Virginica</fento:BOTANICAL>
+        <fento:ZONE>7</fento:ZONE>
+        <fento:LIGHT>Mostly Shady</fento:LIGHT>
+        <fento:PRICE>$6.59</fento:PRICE>
+        <fento:AVAILABILITY>020199</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Trillium</fento:COMMON>
+        <fento:BOTANICAL>Trillium grandiflorum</fento:BOTANICAL>
+        <fento:ZONE>5</fento:ZONE>
+        <fento:LIGHT>Sun or Shade</fento:LIGHT>
+        <fento:PRICE>$3.90</fento:PRICE>
+        <fento:AVAILABILITY>042999</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Wake Robin</fento:COMMON>
+        <fento:BOTANICAL>Trillium grandiflorum</fento:BOTANICAL>
+        <fento:ZONE>5</fento:ZONE>
+        <fento:LIGHT>Sun or Shade</fento:LIGHT>
+        <fento:PRICE>$3.20</fento:PRICE>
+        <fento:AVAILABILITY>022199</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Violet, Dog-Tooth</fento:COMMON>
+        <fento:BOTANICAL>Erythronium americanum</fento:BOTANICAL>
+        <fento:ZONE>4</fento:ZONE>
+        <fento:LIGHT>Shade</fento:LIGHT>
+        <fento:PRICE>$9.04</fento:PRICE>
+        <fento:AVAILABILITY>020199</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Trout Lily</fento:COMMON>
+        <fento:BOTANICAL>Erythronium americanum</fento:BOTANICAL>
+        <fento:ZONE>4</fento:ZONE>
+        <fento:LIGHT>Shade</fento:LIGHT>
+        <fento:PRICE>$6.94</fento:PRICE>
+        <fento:AVAILABILITY>032499</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Adder's-Tongue</fento:COMMON>
+        <fento:BOTANICAL>Erythronium americanum</fento:BOTANICAL>
+        <fento:ZONE>4</fento:ZONE>
+        <fento:LIGHT>Shade</fento:LIGHT>
+        <fento:PRICE>$9.58</fento:PRICE>
+        <fento:AVAILABILITY>041399</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Anemone</fento:COMMON>
+        <fento:BOTANICAL>Anemone blanda</fento:BOTANICAL>
+        <fento:ZONE>6</fento:ZONE>
+        <fento:LIGHT>Mostly Shady</fento:LIGHT>
+        <fento:PRICE>$8.86</fento:PRICE>
+        <fento:AVAILABILITY>122698</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Grecian Windflower</fento:COMMON>
+        <fento:BOTANICAL>Anemone blanda</fento:BOTANICAL>
+        <fento:ZONE>6</fento:ZONE>
+        <fento:LIGHT>Mostly Shady</fento:LIGHT>
+        <fento:PRICE>$9.16</fento:PRICE>
+        <fento:AVAILABILITY>071099</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Bee Balm</fento:COMMON>
+        <fento:BOTANICAL>Monarda didyma</fento:BOTANICAL>
+        <fento:ZONE>4</fento:ZONE>
+        <fento:LIGHT>Shade</fento:LIGHT>
+        <fento:PRICE>$4.59</fento:PRICE>
+        <fento:AVAILABILITY>050399</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Bergamot</fento:COMMON>
+        <fento:BOTANICAL>Monarda didyma</fento:BOTANICAL>
+        <fento:ZONE>4</fento:ZONE>
+        <fento:LIGHT>Shade</fento:LIGHT>
+        <fento:PRICE>$7.16</fento:PRICE>
+        <fento:AVAILABILITY>042799</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Black-Eyed Susan</fento:COMMON>
+        <fento:BOTANICAL>Rudbeckia hirta</fento:BOTANICAL>
+        <fento:ZONE>Annual</fento:ZONE>
+        <fento:LIGHT>Sunny</fento:LIGHT>
+        <fento:PRICE>$9.80</fento:PRICE>
+        <fento:AVAILABILITY>061899</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Buttercup</fento:COMMON>
+        <fento:BOTANICAL>Ranunculus</fento:BOTANICAL>
+        <fento:ZONE>4</fento:ZONE>
+        <fento:LIGHT>Shade</fento:LIGHT>
+        <fento:PRICE>$2.57</fento:PRICE>
+        <fento:AVAILABILITY>061099</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Crowfoot</fento:COMMON>
+        <fento:BOTANICAL>Ranunculus</fento:BOTANICAL>
+        <fento:ZONE>4</fento:ZONE>
+        <fento:LIGHT>Shade</fento:LIGHT>
+        <fento:PRICE>$9.34</fento:PRICE>
+        <fento:AVAILABILITY>040399</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Butterfly Weed</fento:COMMON>
+        <fento:BOTANICAL>Asclepias tuberosa</fento:BOTANICAL>
+        <fento:ZONE>Annual</fento:ZONE>
+        <fento:LIGHT>Sunny</fento:LIGHT>
+        <fento:PRICE>$2.78</fento:PRICE>
+        <fento:AVAILABILITY>063099</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Cinquefoil</fento:COMMON>
+        <fento:BOTANICAL>Potentilla</fento:BOTANICAL>
+        <fento:ZONE>Annual</fento:ZONE>
+        <fento:LIGHT>Shade</fento:LIGHT>
+        <fento:PRICE>$7.06</fento:PRICE>
+        <fento:AVAILABILITY>052599</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Primrose</fento:COMMON>
+        <fento:BOTANICAL>Oenothera</fento:BOTANICAL>
+        <fento:ZONE>3 - 5</fento:ZONE>
+        <fento:LIGHT>Sunny</fento:LIGHT>
+        <fento:PRICE>$6.56</fento:PRICE>
+        <fento:AVAILABILITY>013099</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Gentian</fento:COMMON>
+        <fento:BOTANICAL>Gentiana</fento:BOTANICAL>
+        <fento:ZONE>4</fento:ZONE>
+        <fento:LIGHT>Sun or Shade</fento:LIGHT>
+        <fento:PRICE>$7.81</fento:PRICE>
+        <fento:AVAILABILITY>051899</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Blue Gentian</fento:COMMON>
+        <fento:BOTANICAL>Gentiana</fento:BOTANICAL>
+        <fento:ZONE>4</fento:ZONE>
+        <fento:LIGHT>Sun or Shade</fento:LIGHT>
+        <fento:PRICE>$8.56</fento:PRICE>
+        <fento:AVAILABILITY>050299</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Jacob's Ladder</fento:COMMON>
+        <fento:BOTANICAL>Polemonium caeruleum</fento:BOTANICAL>
+        <fento:ZONE>Annual</fento:ZONE>
+        <fento:LIGHT>Shade</fento:LIGHT>
+        <fento:PRICE>$9.26</fento:PRICE>
+        <fento:AVAILABILITY>022199</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Greek Valerian</fento:COMMON>
+        <fento:BOTANICAL>Polemonium caeruleum</fento:BOTANICAL>
+        <fento:ZONE>Annual</fento:ZONE>
+        <fento:LIGHT>Shade</fento:LIGHT>
+        <fento:PRICE>$4.36</fento:PRICE>
+        <fento:AVAILABILITY>071499</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>California Poppy</fento:COMMON>
+        <fento:BOTANICAL>Eschscholzia californica</fento:BOTANICAL>
+        <fento:ZONE>Annual</fento:ZONE>
+        <fento:LIGHT>Sun</fento:LIGHT>
+        <fento:PRICE>$7.89</fento:PRICE>
+        <fento:AVAILABILITY>032799</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Shooting Star</fento:COMMON>
+        <fento:BOTANICAL>Dodecatheon</fento:BOTANICAL>
+        <fento:ZONE>Annual</fento:ZONE>
+        <fento:LIGHT>Mostly Shady</fento:LIGHT>
+        <fento:PRICE>$8.60</fento:PRICE>
+        <fento:AVAILABILITY>051399</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Snakeroot</fento:COMMON>
+        <fento:BOTANICAL>Cimicifuga</fento:BOTANICAL>
+        <fento:ZONE>Annual</fento:ZONE>
+        <fento:LIGHT>Shade</fento:LIGHT>
+        <fento:PRICE>$5.63</fento:PRICE>
+        <fento:AVAILABILITY>071199</fento:AVAILABILITY>
+    </fento:PLANT>
+    <fento:PLANT>
+        <fento:COMMON>Cardinal Flower</fento:COMMON>
+        <fento:BOTANICAL>Lobelia cardinalis</fento:BOTANICAL>
+        <fento:ZONE>2</fento:ZONE>
+        <fento:LIGHT>Shade</fento:LIGHT>
+        <fento:PRICE>$3.02</fento:PRICE>
+        <fento:AVAILABILITY>022299</fento:AVAILABILITY>
+    </fento:PLANT>
+</fento:CATALOG>
