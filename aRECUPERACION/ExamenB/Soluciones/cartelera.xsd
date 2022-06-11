@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Versión con referencias (ref)
+por tanto es necesario añadir como atributo al esquema
+la linea que explica el espacio de nombres
+xlmns:car="http://www.cine.com/"
+((si no hubiese ref no seria necesario)) -->
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.cine.com/"
+        xmlns:car="http://www.cine.com/"
+        elementFormDefault="qualified">
+
+   <!-- Definiciones de tipos          -->
+
+
+    <xs:complexType name="tipoPelicula">
+        <xs:sequence>
+            <xs:element ref="car:titulo"/>
+            <xs:element ref="car:titulo_original" minOccurs="0"/>
+            <xs:element ref="car:nacionalidad"/>
+            <xs:element ref="car:genero"/>
+            <xs:choice>
+                <xs:element ref="car:clasificacion"/>
+                <xs:element ref="car:sin_clasificar"/>
+            </xs:choice>
+        <xs:element ref="car:sinopsis"/>
+        <xs:element ref="car:director"/>
+        <xs:element ref="car:reparto"/>
+        <xs:element ref="car:web" minOccurs="0"/>
+        <xs:element ref="car:cartel" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="codigo" type="xs:positiveInteger"/>
+        <xs:attribute name="duracion" type="xs:positiveInteger"/>
+        <xs:attribute name="año" type="xs:positiveInteger" default="2003"/>
+
+    </xs:complexType>
+
+    <xs:complexType name="tipoReparto">
+        <xs:sequence>
+            <xs:element ref="car:actor" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoClasificacion">
+        <xs:simpleContent>
+        <xs:extension base="xs:string">
+        <xs:attribute name="edad" type="car:tipoEdad" use="required"/>
+ </xs:extension>
+ </xs:simpleContent>
+</xs:complexType>
+
+<xs:simpleType name="tipoEdad">
+ <xs:restriction base="xs:string">
+ <xs:enumeration value="tp"/>
+ <xs:enumeration value="8"/>
+    <xs:enumeration value="12"/>
+    <xs:enumeration value="16"/>
+    <xs:enumeration value="18"/>
+</xs:restriction>
+        </xs:simpleType>
+
+        <!-- ================================ -->
+        <!-- Elementos de tipo simple    -->
+        <!-- ================================ -->
+<xs:element name="titulo" type="xs:string"/>
+<xs:element name="titulo_original" type="xs:string"/>
+<xs:element name="nacionalidad" type="xs:string"/>
+<xs:element name="genero" type="xs:string"/>
+<xs:element name="clasificacion" type="car:tipoClasificacion"/>
+<xs:element name="sin_clasificar"/>
+<xs:element name="sinopsis" type="xs:string"/>
+<xs:element name="director" type="xs:string"/>
+<xs:element name="reparto" type="car:tipoReparto"/>
+<xs:element name="web" type="xs:string"/>
+<xs:element name="cartel" type="xs:string"/>
+<xs:element name="actor" type="xs:string"/>
+
+<!-- ================================ -->
+<!-- Elementos de tipo complejo    -->
+<!-- ================================ -->
+
+<xs:element name="cartelera">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="car:pelicula"  maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="pelicula" type="car:tipoPelicula"/>
+
+</xs:schema>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- Versión con referencias (ref)
+por tanto es necesario añadir como atributo al esquema
+la linea que explica el espacio de nombres
+xlmns:fac="http://www.empresa.com/"
+((si no hubiese ref no seria necesario)) -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.empresa.com/"
+        xmlns:fac="http://www.empresa.com/"
+        elementFormDefault="qualified">
+    <!-- ====== ELEMENTO facturas ====== -->
+    <xs:element name="facturas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="fac:factura" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- ====== ELEMENTO factura ====== -->
+    <xs:element name="factura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="fac:datos_cliente" minOccurs="1" maxOccurs="1" />
+                <xs:element ref="fac:datos_factura" minOccurs="1" maxOccurs="1" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- ====== ELEMENTO datos_cliente ====== -->
+    <xs:element name="datos_cliente">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="fac:nombre" minOccurs="1" maxOccurs="1" />
+                <xs:element ref="fac:apellido" minOccurs="2" maxOccurs="2" />
+                <xs:element ref="fac:dni" minOccurs="1" maxOccurs="1" />
+                <xs:element ref="fac:tfno" minOccurs="1" maxOccurs="1" />
+            </xs:sequence>
+            <xs:attribute name="ident" type="xs:string" use="required" />
+        </xs:complexType>
+    </xs:element>
+    <!-- ====== ELEMENTO nombre ====== -->
+    <xs:element name="nombre" type="xs:string" />
+    <!-- ====== ELEMENTO apellido ====== -->
+    <xs:element name="apellido" type="xs:string" />
+    <!-- ====== ELEMENTO dni ====== -->
+    <xs:element name="dni">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[0-9]{8}[A-Z]" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <!-- ====== ELEMENTO tfno ====== -->
+    <xs:element name="tfno">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[0-9]{9}" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <!-- ====== ELEMENTO datos_factura ====== -->
+    <xs:element name="datos_factura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="fac:resguardo" minOccurs="1" maxOccurs="1" />
+                <xs:sequence>
+                    <xs:element ref="fac:alquileres" minOccurs="1" maxOccurs="1" />
+                </xs:sequence>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- ====== ELEMENTO resguardo ====== -->
+    <xs:element name="resguardo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="fac:forma_pago" minOccurs="1" maxOccurs="1" />
+                <xs:element ref="fac:importe_total" minOccurs="1" maxOccurs="1" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- ====== ELEMENTO forma_pago ====== -->
+    <xs:element name="forma_pago" type="xs:string" />
+    <!-- ====== ELEMENTO importe_total ====== -->
+    <xs:element name="importe_total" type="xs:float" />
+    <!-- ====== ELEMENTO alquileres ====== -->
+    <xs:element name="alquileres">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="fac:fecha" minOccurs="1" maxOccurs="1" />
+                <xs:element ref="fac:peliculas" minOccurs="1" maxOccurs="1" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- ====== ELEMENTO fecha ====== -->
+    <xs:element name="fecha" type="xs:date" />
+    <!-- ====== ELEMENTO peliculas ====== -->
+    <xs:element name="peliculas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="fac:pelicula" minOccurs="1" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- ====== ELEMENTO pelicula ====== -->
+    <xs:element name="pelicula">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="fac:titulo" minOccurs="1" maxOccurs="1" />
+                <xs:element ref="fac:genero" minOccurs="1" maxOccurs="1" />
+                <xs:element ref="fac:duracion" minOccurs="1" maxOccurs="1" />
+                <xs:element ref="fac:actores" minOccurs="1" maxOccurs="1" />
+            </xs:sequence>
+            <xs:attribute name="id_pelicula" type="xs:string" use="required" />
+            <xs:attribute name="valoracion" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+    <!-- ====== ELEMENTO titulo ====== -->
+    <xs:element name="titulo" type="xs:string" />
+    <!-- ====== ELEMENTO genero ====== -->
+    <xs:element name="genero" type="xs:string" />
+    <!-- ====== ELEMENTO duracion ====== -->
+    <xs:element name="duracion" type="xs:positiveInteger" />
+    <!-- ====== ELEMENTO actores ====== -->
+    <xs:element name="actores">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="fac:actor" minOccurs="3" maxOccurs="3" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- ====== ELEMENTO actor ====== -->
+    <xs:element name="actor">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="fac:nombre" minOccurs="1" maxOccurs="1" />
+                <xs:element ref="fac:apellido" minOccurs="2" maxOccurs="2" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+</xs:schema>

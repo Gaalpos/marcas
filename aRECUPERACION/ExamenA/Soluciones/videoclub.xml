@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+(CUANDO MARCA COMO ERROR EL ESPACIO DE NOMBRES
+SOLO TENEMOS QUE DARLE EN LA OPCIONIGNORA RECURSO EXTERNO)
+-->
+<fac:facturas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="videoclub.xsd http://www.empresa.com/"
+              xmlns:fac="http://www.empresa.com/">
+    <fac:factura>
+        <fac:datos_cliente ident="abcd">
+            <fac:nombre>Juan</fac:nombre>
+            <fac:apellido>López</fac:apellido>
+            <fac:apellido>Jiménez</fac:apellido>
+            <fac:dni>11111111N</fac:dni>
+            <fac:tfno>123456789</fac:tfno>
+        </fac:datos_cliente>
+        <fac:datos_factura>
+            <fac:resguardo>
+                <fac:forma_pago>
+                    Efectivo
+                </fac:forma_pago>
+                <fac:importe_total>
+                    1256325.23
+                </fac:importe_total>
+            </fac:resguardo>
+            <fac:alquileres>
+                <fac:fecha>2010-12-25</fac:fecha>
+                <fac:peliculas>
+                    <fac:pelicula id_pelicula="ABC" valoracion="buena">
+                        <fac:titulo>El retorno del Jedi</fac:titulo>
+                        <fac:genero>Espacio</fac:genero>
+                        <fac:duracion>125</fac:duracion>
+                        <fac:actores>
+                            <fac:actor>
+                                <fac:nombre>Juan</fac:nombre>
+                                <fac:apellido>Pardo</fac:apellido>
+                                <fac:apellido>López</fac:apellido>
+                            </fac:actor>
+                            <fac:actor>
+                                <fac:nombre>Manuel</fac:nombre>
+                                <fac:apellido>Bandera</fac:apellido>
+                                <fac:apellido>Garrido</fac:apellido>
+                            </fac:actor>
+                            <fac:actor>
+                                <fac:nombre>Luis</fac:nombre>
+                                <fac:apellido>González</fac:apellido>
+                                <fac:apellido>Romero</fac:apellido>
+                            </fac:actor>
+                        </fac:actores>
+                    </fac:pelicula>
+                </fac:peliculas>
+            </fac:alquileres>
+        </fac:datos_factura>
+    </fac:factura>
+</fac:facturas>

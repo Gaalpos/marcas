@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="aeropuerto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="fecha" type="xs:date"/>
+                <xs:element name="vuelos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="vuelo" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="diario" minOccurs="0"/>
+                                        <xs:element name="origen" type="xs:string"/>
+                                        <xs:element name="destino" type="xs:string"/>
+                                        <xs:element name="salida" type="xs:time"/>
+                                        <xs:element name="llegada" type="xs:time"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="codigo" type="xs:ID" use="required"/>
+                                    <xs:attribute name="estado" default="E">
+                                        <xs:simpleType>
+                                            <!--o bien un enumerado de tres valores-->
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="[CER]"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

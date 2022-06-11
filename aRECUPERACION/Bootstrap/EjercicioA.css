@@ -1,0 +1,53 @@
+.bg-bw {
+    background-color: burlywood;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.bg-blue {
+    background-color: aqua;
+}
+
+.bg-green {
+    background-color: rgb(0, 255, 115);
+}
+
+.bg-pink {
+    background-color: rgb(255, 0, 183);
+}
+
+@media (min-width: 576px) {
+    .bg-sm-green {
+        background-color: greenyellow;
+    }
+}
+
+@media (min-width: 576px) {
+    .bg-sm-red {
+        background-color: red;
+    }
+}
+
+@media (min-width: 576px) {
+    .bg-sm-blue {
+        background-color: aqua;
+    }
+}
+
+@media (min-width: 768px) {
+    .bg-md-red {
+        background-color: red;
+    }
+}
+
+@media (min-width: 768px) {
+    .bg-md-green {
+        background-color: greenyellow;
+    }
+}
