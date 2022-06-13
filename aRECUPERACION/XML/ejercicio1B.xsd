@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+    <xs:element name="registro">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:group ref="personas"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:group name="personas">
+        <xs:sequence>
+            <xs:element name="usuario" minOccurs="0"
+                        maxOccurs="unbounded" type="tipoUsuario"/>
+            <xs:element name="empleado" minOccurs="0"
+                        maxOccurs="unbounded" type="tipoEmpleado"/>
+        </xs:sequence>
+    </xs:group>
+</xs:schema>

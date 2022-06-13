@@ -5,13 +5,11 @@
     <usuario identificador="U123">
         <apellidos_nombre>Sanz Tapia,Ana</apellidos_nombre>
         <email>asanz@jmail.com</email>
-
         <conexiones>
             <conexion fecha="2014-02-23" hora="19:15:40">122</conexion>
             <conexion fecha="2014-02-23" hora="20:30:22">617</conexion>
             <conexion fecha="2014-02-24" hora="11:18:31">25</conexion>
         </conexiones>
-
     </usuario>
 
     <usuario identificador="U96">

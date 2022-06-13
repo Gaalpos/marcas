@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!-- Versión con referencias (ref)
-por tanto es necesario añadir como atributo al esquema
-la linea que explica el espacio de nombres
-xlmns:car="http://www.cine.com/"
-((si no hubiese ref no seria necesario)) -->
-
-
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            targetNamespace="http://www.cine.com/"
            xmlns:car="http://www.cine.com/"
            elementFormDefault="qualified">
+
 
     <!-- Definiciones de tipos          -->
 
@@ -59,14 +53,16 @@ xlmns:car="http://www.cine.com/"
         </xs:restriction>
     </xs:simpleType>
 
+
     <!-- ================================ -->
     <!-- Elementos de tipo simple    -->
     <!-- ================================ -->
-    <xs:element name="titulo" type="xs:string"/>
+
+    <xs:element name="titulo" type="xs:string" />
     <xs:element name="titulo_original" type="xs:string"/>
     <xs:element name="nacionalidad" type="xs:string"/>
     <xs:element name="genero" type="xs:string"/>
-    <xs:element name="clasificacion" type="car:tipoClasificacion"/>
+   <xs:element name="clasificacion" type="car:tipoClasificacion"/>
     <xs:element name="sin_clasificar"/>
     <xs:element name="sinopsis" type="xs:string"/>
     <xs:element name="director" type="xs:string"/>
@@ -77,8 +73,6 @@ xlmns:car="http://www.cine.com/"
 
 
 
-
-
     <!-- ================================ -->
     <!-- Elementos de tipo complejo    -->
     <!-- ================================ -->
@@ -86,11 +80,12 @@ xlmns:car="http://www.cine.com/"
     <xs:element name="cartelera">
         <xs:complexType>
             <xs:sequence>
-                <xs:element ref="car:pelicula"  maxOccurs="unbounded"/>
+                <xs:element ref="car:pelicula" maxOccurs="unbounded"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
 
     <xs:element name="pelicula" type="car:tipoPelicula"/>
+
 
 </xs:schema>
