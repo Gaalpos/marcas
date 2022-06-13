@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.empresa.com/"
+           xmlns:fac="http://www.empresa.com/"
+           elementFormDefault="qualified">
+
+
+    <xs:element name="facturas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="fac:factura" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="factura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="fac:datos_cliente" minOccurs="1" maxOccurs="1"/>
+                <xs:element ref="fac:datos_factura" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="datos_cliente">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="fac:nombre" type="xs:string"/>
+                <xs:element name="fac:apellido" type="xs:string" minOccurs="1" maxOccurs="2"/>
+                <xs:element name="fac:dni" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="fac:tfno" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute name="ident" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="datos_factura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="fac:resguardo" type="xs:string" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="fac:alquileres" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="nombre" type="xs:string" />
+    <xs:element name="apellido" type="xs:string" />
+    <xs:element name="dni">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[0-9]{8}[A-Z]"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="tfno">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[0-9]{9}"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+
+</xs:schema>
