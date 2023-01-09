@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3B</title>
+    <link rel="stylesheet" type="text/css" href="ejercicio3B.css">
+</head>
+
+<body>
+    <div>
+        <h3><strong>Basic HTML Form</strong></h3>
+        <form action="maneja_formulario.php" method="post">
+            <fieldset>
+                <legend>Name</legend>
+                <br>
+                <label>First Name</label><br />
+                <input type="text" name="nombre" value="" />
+                <br /><br>
+                <label>Last Name</label> <br />
+                <input type="text" name="apellidos" value="" />
+                <br /><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Other Questions</legend>
+                <br>
+                <label>Choose a drink:</label>
+                <br />
+                <input type="radio" name="drink" value="coffee" /> coffee
+                <br>
+                <input type="radio" name="drink" value="tea" checked="checked" /> tea
+                <br>
+                <input type="radio" name="drink" value="hot chocolate" /> hot chocolate
+                <br><br>
+                <label>What ice cream do you like?</label>
+                <br>
+                <input name="flavour" type="checkbox" value="" /> Chocolate
+                <br>
+                <input name="flavour" type="checkbox" value="" /> Chocolate Pudding
+                <br>
+                <input name="flavour" type="checkbox" value="" checked="checked" /> Chocolate Peanut Butter
+                <br>
+                <input name="flavour" type="checkbox" value="" /> Vanilla
+                <br>
+                <input name="flavour" type="checkbox" value="" /> Strawberry
+                <br><br>
+                <label for="school">Select a school</label> <br />
+                <select id="school" name="school">
+                    <option value="" selected="selected">Harvard</option>
+                    <option value="01">Cebem</option>
+                    <option value="02">Stanford</option>
+                    <option value="03">St Mary School</option>
+                    <option value="04">Oxford</option>
+                </select>
+                <br><br>
+                <label for="descripcion">Please provide comments:</label> <br />
+                <textarea name="descripcion" id="descripcion" cols="40" rows="5"></textarea>
+
+            </fieldset>
+            <br>
+
+            <input type="submit" name="submit" value="Submit" />
+        </form>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

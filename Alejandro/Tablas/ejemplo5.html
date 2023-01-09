@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Tabla Compleja</title>
+    <link rel="stylesheet" type="text/css" href="ejemplo3.css">
+    <style type="text/css">
+        caption {
+            color: green;
+            font-size: 3em;
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h2>Análisis de ventas</h2>
+        <table summary="Análisis de ventas anuales">
+            <caption>Análisis de ventas anuales</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">AÑO</th>
+                    <th colspan="4" scope="col">Expansión de ventas</th>
+                </tr>
+                <tr>
+                    <th scope="col">Producto A</th>
+                    <th scope="col">Producto B</th>
+                    <th scope="col">Producto C</th>
+                    <th scope="col">Producto D</th>
+                </tr>
+            </thead>
+
+            <tfoot>
+                <tr>
+                    <th rowspan="2" scope="col">AÑO</th>
+                    <th scope="col">Producto A</th>
+                    <th scope="col">Producto B</th>
+                    <th scope="col">Producto C</th>
+                    <th scope="col">Producto D</th>
+                </tr>
+                <tr>
+                    <th colspan="4" scope="col">Expansión de ventas</th>
+                </tr>
+            </tfoot>
+
+            <tbody>
+                <tr>
+                    <th scope="row">N-3</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th scope="row">N-2</th>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th scope="row">N-1</th>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th scope="row">N</th>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <br>
+    <div>
+        <table summary="Análisis de ventas anuales">
+            <caption>Análisis de ventas anuales</caption>
+
+            <col style="width:10%;" />
+            <col style="width:30%;" />
+            <col style="width:50%;" />
+            <thead>
+                <tr>
+                    <th scope="col">AÑO</th>
+                    <th scope="col">Producto A</th>
+                    <th scope="col">Producto B</th>
+                    <th scope="col">Producto C</th>
+                    <th scope="col">Producto D</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">N-3</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th scope="row">N-2</th>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th scope="row">N-1</th>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th scope="row">N</th>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <br>
+    <div>
+        <table summary="Análisis de ventas anuales">
+            <caption>Análisis de ventas anuales</caption>
+
+            <colgroup span="1" style="background-color:red;">
+                <colgroup span="3" style="background-color:blue;">
+
+                <thead>
+            <tr>
+                <th scope="col">AÑO</th>
+                <th scope="col">Producto A</th>
+                <th scope="col">Producto B</th>
+                <th scope="col">Producto C</th>
+                <th scope="col">Producto D</th>
+            </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="row">N-3</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th scope="row">N-2</th>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th scope="row">N-1</th>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th scope="row">N</th>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+
+</html>

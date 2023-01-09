@@ -1,0 +1,21 @@
+#contenedor {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 30px auto;
+    width: 60%;
+}
+
+#picture {
+    float: left;
+    width: 20%;
+    margin: 1em;
+}
+
+img {
+    width: 80%;
+    height: 80%;
+}
+
+p {
+    font-size: 1.5em;
+}

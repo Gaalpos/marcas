@@ -1,0 +1,51 @@
+div {
+    font-size: 1.2em;
+    margin: 10px auto;
+    width: 85%;
+
+    background-color: beige;
+    color: #f96;
+    padding: 2px;
+}
+
+a {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:active {
+    color: chartreuse;
+}
+
+a:visited {
+    color: gold;
+}
+
+a:hover {
+    color: blue;
+    font-style: italic;
+}
+
+a.blanco {
+    color: #FFBB00;
+}
+
+a.tinto {
+    color: #800000;
+}
+
+span.ventaja {
+    color: red;
+}
+
+#democrats {
+    background: blue;
+}
+
+#republicans {
+    background: red;
+}

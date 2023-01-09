@@ -1,0 +1,30 @@
+#contenedor {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 30px auto;
+    background-color: aliceblue;
+    width: 60%;
+    display: flex;
+}
+
+#column1 {
+    float: left;
+    width: 30%;
+    margin: 0.5em;
+}
+
+#column2 {
+    float: left;
+    width: 30%;
+    margin: 0.5em;
+}
+
+#column3 {
+    float: left;
+    width: 30%;
+    margin: 0.5em;
+}
+
+#limpia {
+    clear: both;
+}
