@@ -1,0 +1,20 @@
+div {
+    width: 70%;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+}
+
+td {
+    border: 1px solid black;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 5%;
+}
+
+#grande {
+    padding: 8%;
+}

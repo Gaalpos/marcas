@@ -1,0 +1,28 @@
+body {
+    background-color: cyan;
+
+}
+
+p {
+    text-align: center;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+}
+
+span {
+    text-decoration-color: red;
+}
+
+p.uno {
+    background-color: silver;
+}
+
+p.dos {
+    text-align: right;
+    font-size: 20px;
+}
+
+span {
+    color: red;
+}

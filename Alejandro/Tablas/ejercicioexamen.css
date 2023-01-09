@@ -1,0 +1,41 @@
+div {
+    width: 70%;
+    margin: auto;
+
+
+
+}
+
+table {
+    border: 5px ridge beige;
+    border-collapse: collapse;
+    margin: auto;
+
+}
+
+h3 {
+    text-align: center;
+
+}
+
+td {
+    padding: 30px;
+    border: 3px ridge beige;
+    text-align: center;
+    background-color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.naranja {
+
+    background-color: orangered;
+
+}
+
+
+.amarillo {
+
+    background-color: yellow;
+
+}

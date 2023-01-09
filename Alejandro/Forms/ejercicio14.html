@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+</head>
+
+<body>
+    <h3>Rellena tu CV</h3>
+    <br>
+    <form action="http://www.librosweb.es/maneja_formulario.php" method="post" enctype="multipart/form-data">
+        <label>Nombre</label>
+        <br>
+        <input type="text" name="Nombre" value="" size="30" maxlength="30" />
+        <br>
+        <label>Apellidos</label>
+        <br>
+        <input type="text" name="Apellidos" value="" size="80" maxlength="80" />
+        <br>
+        <label>Contraseña</label>
+        <br>
+        <input type="password" name="contrasena" value="" size="30" maxlength="10" />
+        <br>
+        <label>DNI</label>
+        <br>
+        <input type="text" name="DNI" value="" size="9" maxlength="9" />
+        <br>
+        <label>Sexo</label>
+        <br />
+        <input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre
+        <br>
+        <input type="radio" name="sexo" value="mujer" /> Mujer
+        <br>
+        <label>Incluir mi foto</label>
+        <input type="file" name="adjunto" />
+        <br>
+        <input name="novedades" type="checkbox" value="" checked /> Suscribirme al boletin de novedades
+        <br>
+        <br>
+        <input type="submit" name="Enviar" value="Enviar" />
+        <input type="reset" name="limpiar" value="Borrar datos del formulario" />
+
+
+
+    </form>
+
+</body>
+
+</html>

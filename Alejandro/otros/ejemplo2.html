@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 2 EMBED Y OBJECT</title>
+</head>
+
+<body>
+    <h2>Object y una imagen</h2>
+    <object data="Imagenes/pic_trulli.jpg" width="300" height="200"></object>
+    <h2>Object y un HTML</h2>
+    <object data="ejemplo1.html" width="500" height="200"></object>
+    <h2>Object y un video</h2>
+    <object data="Videos/movie.mp4" width="400" height="300"></object>
+
+    <h2>WARNING</h2>
+    <p>
+        To embed a picture, it is better to use the img tag.
+
+        To embed HTML, it is better to use the iframe tag.
+
+        To embed video or audio, it is better to use the video and audio tags.
+    </p>
+
+    <h2>EMBED y una imagen</h2>
+    <embed src="Imagenes/pic_trulli.jpg" width="300" height="200"></embed>
+    <h2>EMBED y un HTML</h2>
+    <embed src="ejemplo1.html" width="500" height="200"></embed>
+    <h2>EMBED y un video</h2>
+    <embed src="Videos/movie.mp4" width="400" height="300"></embed>
+
+    <h2>incrustar un video</h2>
+    <video width="320" height="240" controls>
+        <source src="Videos/movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>incrustar un audio</h2>
+    <audio controls>
+        <source src="Audios/horse.ogv" type="audio/ogg">
+        <source src="Audios/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <h2>incrustar recursos externos URL</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/j4qlv-cqmrk" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+
+
+</body>
+
+</html>
