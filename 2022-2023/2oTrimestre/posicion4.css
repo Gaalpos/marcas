@@ -1,0 +1,26 @@
+/* div {
+    border: 5px solid blue;
+    background-color: rgb(238, 105, 52);
+    padding: 5px;
+} */
+
+#perro1 {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    z-index: 1;
+}
+
+#perro2 {
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    z-index: 2;
+}
+
+#perro3 {
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    z-index: 3;
+}

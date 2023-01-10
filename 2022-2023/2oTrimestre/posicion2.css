@@ -1,0 +1,50 @@
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color: red;
+    border: 10px yellow;
+    padding: 5px;
+    background-color: orange;
+}
+
+#box1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border: 5px blueviolet;
+    background-color: brown;
+    padding: 5px;
+}
+
+#box2 {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    border: 5px rgb(238, 204, 68);
+    background-color: rgb(79, 84, 237);
+    padding: 5px;
+}
+
+#box3 {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    border: 5px rgb(247, 104, 164);
+    background-color: rgb(42, 157, 165);
+    padding: 5px;
+
+}
+
+#box4 {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    border: 5px blueviolet;
+    background-color: brown;
+    padding: 5px;
+}
