@@ -1,0 +1,27 @@
+div{
+	border: 1px solid blue;
+	background-color: rosybrown;
+	margin: 10px;
+	padding: 10px;
+}
+
+#dog1 {
+position: absolute;
+left: 100px;
+top: 100px;
+z-index: 1;
+}
+
+#dog2 {
+position: absolute;
+left: 125px;
+top: 125px;
+z-index: 2;
+}
+
+#dog3 {
+position: absolute;
+left: 150px;
+top: 150px;
+z-index: 3;
+}
