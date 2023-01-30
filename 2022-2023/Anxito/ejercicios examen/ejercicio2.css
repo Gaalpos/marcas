@@ -1,0 +1,98 @@
+/* pseudo estilos */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', 'sans-serif';
+    background-color: #fff;
+    color: #444;
+  }
+  
+  /* no grid support? */
+  .sidebar {
+    float: right;
+    width: 19.1489%;
+  }
+
+  .main{
+    float: left;
+    width: 19.1489%;
+  }
+  
+  .content {
+    float: right;
+    width: 79.7872%;
+  }
+  
+  /* make a grid */
+  .wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+  
+  /* esta incluido dentro de que */
+  .wrapper > * {
+    background-color: palevioletred;
+    color: black;
+    padding: 20px;
+    font-size: 150%;
+    /* needed for the floated layout*/
+    margin-bottom: 10px;
+  }
+  
+  .header, .footer, .navigation-bar {
+    /* que significa el -1 como columna a la que see llega */
+    grid-column: 1 /-1;
+    /* needed for the floated layout */
+    clear: both;
+  }
+  
+  
+  /* We need to set the widths used on floated items back to auto, 
+  and remove the bottom margin as when we have grid we have gaps. */
+  @supports (display: grid) {
+    .wrapper > * {
+      width: auto;
+      margin:0;
+    }
+  }
+
+  .aside1{
+    
+  }
+
+  .a{
+    background-color: lightgoldenrodyellow;
+  }
+
+  .b{
+    background-color: slateblue;
+  }
+
+  .c{
+    background-color: aquamarine;
+  }
+  .d{
+    background-color: wheat;
+  }
+
+  .e{
+    background-color: lightgreen;
+  }
+  .f{
+    background-color: slateblue;
+  }
+
+  .g{
+    background-color: gray;
+  }
+
+  div{
+    text-align: center;
+
+  }
