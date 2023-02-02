@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://www.w3schools.com" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="note" type="w3s:noteType" xmlns:w3s="https://www.w3schools.com"/>
+  <xs:complexType name="noteType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="to"/>
+      <xs:element type="xs:string" name="from"/>
+      <xs:element type="xs:string" name="heading"/>
+      <xs:element type="xs:string" name="body"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
