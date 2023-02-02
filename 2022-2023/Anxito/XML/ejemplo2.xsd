@@ -1,12 +1,16 @@
-<xs:element name="nota" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
-<xs:complexType>
-  <xs:sequence>
-    <xs:element name="to" type="xs:string"/>
-    <xs:element name="from" type="xs:string"/>
-    <xs:element name="heading" type="xs:string"/>
-    <xs:element name="body" type="xs:string"/>
-  </xs:sequence>
-</xs:complexType>
-
-</xs:element>
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified"
+           elementFormDefault="qualified">
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- definicion de desayunos  -->
+    <xs:element name="desayuno" type="tipoDesayuo"/>
+    <!--Declaracion de tipo de elemento-->
+    <xs:complexType name="tipoDesayuno">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="precio" type="xs:string"/>
+            <xs:element name="descripcion" type="xs:string"/>
+            <xs:element name="calorias" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

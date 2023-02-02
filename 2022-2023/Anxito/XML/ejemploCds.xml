@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CDS>
+    <modelo>
+        <name>Melendi</name>
+        <price>$15.95</price>
+        <description>
+            Disco de canciones del cantante español Melendi.
+        </description>
+    </modelo>
+    <Modelo>
+        <name>Lola Indigo</name>
+        <price>$17.95</price>
+        <description>
+            Disco de las nuevas canciones del 2022 de la cantante hispno hablante Lola indigo
+        </description>
+    </Modelo>
+    <modelo>
+        <name>Pablo Alborán</name>
+        <price>$18.95</price>
+        <description>
+          Diso de canciones de Pablo Alborán, grandes exitos
+        </description>
+    </modelo>
+</CDS>
