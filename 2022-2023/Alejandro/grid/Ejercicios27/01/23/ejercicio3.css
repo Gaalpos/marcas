@@ -1,0 +1,42 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 100px repeat(2, [column] 150px) 100px;
+    grid-template-rows: repeat(5, [row] 100px) 70px;
+    grid-gap: 10px;
+    color: aliceblue;
+    font-size: x-large;
+
+
+}
+
+.header {
+    grid-column: 1 / 5;
+    grid-row: 1 / 1;
+    background-color: rgb(248, 137, 137);
+    padding-top: 35px;
+}
+
+.main {
+    grid-column: 1 / 3;
+    grid-row: 2 / 2;
+    background-color: rgb(109, 234, 238);
+    padding-top: 35px;
+
+
+}
+
+.sidebar {
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+    background-color: rgb(99, 216, 99);
+    padding-top: 35px;
+
+}
+
+.footer {
+    grid-column: 1 / 5;
+    grid-row: 3 / 3;
+    background-color: rgb(134, 110, 153);
+    padding-top: 35px;
+
+}
