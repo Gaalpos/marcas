@@ -1,0 +1,21 @@
+body{
+    background:linear-gradient(30deg, crimson,sienna, royalblue, indianred, purple);
+}
+
+h1{
+    text-align: center;
+    color: blanchedalmond;
+}
+
+p{
+    color: blanchedalmond;
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    margin: 24px;
+    padding: 200px;
+    height: 400px;
+
+}
