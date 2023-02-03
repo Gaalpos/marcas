@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <breakfast_menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                xsi:noNamesoaceSchemaLocation="ejemplo3.xsd">
+                xsi:noNamespaceSchemaLocation="ejemplo3.xsd">
     <food>
         <name>Belgian Waffles</name>
         <price>$5.95</price>
