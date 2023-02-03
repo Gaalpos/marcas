@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema attributeFormDefault="unqualified"
-           elementFormDefault="qualified">
+<xs:schema elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
     <!-- definicion de desayunos  -->
-    <xs:element name="desayuno" type="tipoDesayuo"/>
+    <xs:element name="desayuno" type="comida"/>
     <!--Declaracion de tipo de elemento-->
-    <xs:complexType name="tipoDesayuno">
+    <xs:complexType name="comida">
         <xs:sequence>
             <xs:element name="name" type="xs:string"/>
             <xs:element name="precio" type="xs:string"/>

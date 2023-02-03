@@ -3,10 +3,10 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
     <xs:element name="desayunos">
-        <xs.comPlexType>
-            <xs.sequence>
-                <xs.element name="comida" min0ccurs="0" max0curse="unbounded">
-                        <xs:complexType>
+        <xs:comPlexType>
+            <xs:sequence>
+                <xs:element name="comida" min0ccurs="0" max0curse="unbounded">
+                    <xs:complexType>
                             <xs:sequence>
                                 <xs:element name="name" type="xs:string"></xs:element>
                                 <xs:element name="precio" type="xs:string"></xs:element>
@@ -14,9 +14,9 @@
                                 <xs:element name="calorias" type="xs:int"></xs:element>
                             </xs:sequence>
                         </xs:complexType>
-                </xs.element>
-            </xs.sequence>
-        </xs.comPlexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:comPlexType>
 
 
     </xs:element>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <xs:element name="catalogo" type="tipoCatalogo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cd" type="tipoCD" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="titulo" type="xs:string"></xs:element>
+                            <xs:element name="artista" type="xs:string"></xs:element>
+                            <xs:element name="ciudad" type="xs:string"></xs:element>
+                            <xs:element name="company" type="xs:string"></xs:element>
+                            <xs:element name="precio" type="xs:float"></xs:element>
+                            <xs:element name="año" type="xs:int"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <!-- Definicion del tipo complejo tipo catalogo -->
+    <xs:complexType name="tipoCatalogo">
+        <xs:sequence>
+            <xs:element name="cd" type="tipoCD" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Definicion del tipo complejo tipoCD-->
+
+    <xs:complexType type="tipoCD">
+        <xs:sequence>
+            <xs:element name="titulo" type="xs:string"></xs:element>
+            <xs:element name="artista" type="xs:string"></xs:element>
+            <xs:element name="ciudad" type="xs:string"></xs:element>
+            <xs:element name="company" type="xs:string"></xs:element>
+            <xs:element name="precio" type="xs:float"></xs:element>
+            <xs:element name="año" type="xs:int"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
+
