@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<desayunos  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                xsi:noNamespaceSchemaLocation="ejemplo3.xsd">
+<desayunos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="ejemplo3.xsd">
     <comida>
         <name>Belgian Waffles</name>
         <precio>$5.95</precio>
