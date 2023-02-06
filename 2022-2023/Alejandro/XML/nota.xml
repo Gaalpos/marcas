@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- OJO DECLARA DOS ESPACIOS DE NOMBRES
+EL PRIMERO PROPIO. EL SEGUNDO PARA INDICAR EL ESQUEMA ASOCIADO-->
+<mien:note xmlns:mien="https://www.w3schools.com"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="https://www.w3schools.com nota.xsd">
+    <mien:to>Tove</mien:to>to>
+    <mien:from>Jani</mien:from>
+    <mien:heading>Reminder</mien:heading>
+    <mien:body>Don't forget me this weekend!</mien:body>
+</mien:note>
