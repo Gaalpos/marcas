@@ -3,6 +3,7 @@
       xsi:noNamespaceSchemaLocation="ejemplo1.xsd">
     <para>Tove</para>
     <de>Jani</de>
-    <asunto>Reminder</asunto>
+    <asunto importancia="alta">Reminder</asunto>
     <contenido>Don't forget me this weekend!</contenido>
+    <extra></extra>
 </nota>
