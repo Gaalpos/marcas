@@ -2,16 +2,12 @@
 <xs:schema attributeFormDefault="unqualified"
            elementFormDefault="qualified"
            xmlns:xs="http://www.w3.org/2001/XMLSchema">
-
     <xs:element name="CATALOG" type="CAT"/>
-    <!-- Definicion del tipo complex catalogo -->
     <xs:complexType name="CAT">
         <xs:sequence>
             <xs:element name="PLANT" type="TPLANT" maxOccurs="unbounded" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-
-    <!-- Definicion del tipo complex tipoPlanta -->
     <xs:complexType name="TPLANT">
         <xs:sequence>
             <xs:element name="COMMON" type="xs:string"/>
