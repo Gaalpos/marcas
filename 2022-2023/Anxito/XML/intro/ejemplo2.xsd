@@ -9,7 +9,6 @@
             <xs:element name="comida" type="hambre" maxOccurs="unbounded" minOccurs="1"/>
         </xs:sequence>
     </xs:complexType>
-
     <!--Declaracion de tipo de elemento-->
     <xs:complexType name="hambre">
         <xs:sequence>
