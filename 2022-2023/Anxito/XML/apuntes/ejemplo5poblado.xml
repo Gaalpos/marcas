@@ -1,0 +1,10 @@
+<productos>
+  <raton>
+    <codigo>string</codigo>
+  </raton>
+  <teclado>
+    <codigo>string</codigo>
+    <descripcion>string</descripcion>
+    <peso>3</peso>
+  </teclado>
+</productos>
