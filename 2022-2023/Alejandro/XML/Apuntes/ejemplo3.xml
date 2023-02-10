@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<listaventas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="ejemplo3.xsd">
+    <ventapc>100</ventapc>
+    <ventamonitor>200</ventamonitor>
+    <ventapc>300</ventapc>
+    <ventapc>400</ventapc>
+    <ventamonitor>500</ventamonitor>
+</listaventas>
