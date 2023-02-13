@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<listaPedidos xmlns:xsi="http://www.w3.org/2001/XMLSchema"
+xsi:noNamespaceSchemaLocation="ejercicioDOS.xsd">
+    <pedidos>
+        <serie></serie>
+        <cantidad></cantidad>
+        <peso></peso>
+    </pedidos>
+
+    <pedidos>
+        <serie></serie>
+        <cantidad></cantidad>
+        <peso></peso>
+    </pedidos>
+
+    <pedidos>
+        <serie></serie>
+        <cantidad></cantidad>
+        <peso></peso>
+    </pedidos>
+
+</listaPedidos>

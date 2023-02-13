@@ -1,0 +1,6 @@
+Ejercicio II (Schema Data)
+
+Crear un XML de ejemplo y el Schema Data asociado para unos programadores que programan
+una aplicacion de pedidos donde hay una lista de pedidos con 0 o mas pedidos.
+
+Cada pedido tiene un numero de serie, una cantidad y un peso que puede ser opcional
