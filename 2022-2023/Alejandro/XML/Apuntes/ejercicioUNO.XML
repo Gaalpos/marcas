@@ -1,13 +1,19 @@
-Unos programadores necesitan un formato de fichero para que sus distintos programas
-intercambien información sobre ventas.
-El acuerdo al que han llegado es que su XML debería tener esta estructura:
+<?xml version="1.0" encoding="UTF-8" ?>
+<listaventas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="ejercicioUNO.xsd">
+    <venta>
+        <importe>100</importe>
+        <comprador>Arnau</comprador>
+        <vendedor>Lucas</vendedor>
+        <fecha>2022-03-22</fecha>
+        <codigo>201</codigo>
+    </venta>
+    <venta>
+        <importe>42</importe>
+        <comprador>Pepe</comprador>
+        <vendedor>Manolo</vendedor>
+        <fecha>2021-09-11</fecha>
+        <codigo>306</codigo>
+    </venta>
+</listaventas>
 
-El elemento raíz será <listaventas>
-Toda <listaventas> tiene una o más ventas.
-
-Toda <venta> tiene los siguientes datos:
-    Importe.
-    Comprador.
-    Vendedor.
-    Fecha (optativa).
-    Un codigo de factura.
