@@ -1,3 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xsi:noNamespaceSchemaLocation="ejercicioTRES.xsd"></productos>
+              xsi:noNamespaceSchemaLocation="ejercicioTRES.xsd">
+        <producto>
+            <teclado>
+                <codigo>180</codigo>
+                <nombre>Tacens</nombre>
+                <descripcion>teclado barato</descripcion>
+            </teclado>
+        </producto>
+    <producto>
+        <raton>
+            <codigo>201</codigo>
+            <nombre>HP</nombre>
+        </raton>
+    </producto>
+    <producto>
+        <monitor>
+            <codigo>109</codigo>
+            <descripcion>2k 24 pulgadas panel IPS</descripcion>
+        </monitor>
+    </producto>
+    <producto>
+        <monitor>
+            <codigo>11</codigo>
+        </monitor>
+    </producto>
+
+</productos>
