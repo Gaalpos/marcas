@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="ejercicioTRESb.xsd">s
+    xsi:noNamespaceSchemaLocation="ejercicioTRESb.xsd">
         <raton>
             <codigo>120</codigo>
             <nombre>razer</nombre>

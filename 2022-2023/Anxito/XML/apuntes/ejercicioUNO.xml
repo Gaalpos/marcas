@@ -11,7 +11,7 @@ xsi:noNamespaceSchemaLocation="ejercicioUNO.xsd">
 
 
     <venta>
-        <importe>1</importe>
+        <importe>2</importe>
         <comprador>manolo</comprador>
         <vendedor>rafa</vendedor>
         <codigo>128</codigo>
