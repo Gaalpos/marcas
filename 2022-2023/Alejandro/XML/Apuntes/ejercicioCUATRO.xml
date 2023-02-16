@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<listaventas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="ejercicioCUATRO.xsd">
+    <venta>
+        <importe>205</importe>
+        <comprador>Don Antonio</comprador>
+        <vendedor>Pepe</vendedor>
+        <codigo>102</codigo>
+    </venta>
+    <venta>
+        <importe>23</importe>
+        <comprador>Angel</comprador>
+        <vendedor>Miguel</vendedor>
+        <codigo>078</codigo>
+        <fecha>2022-03-12</fecha>
+    </venta>
+</listaventas>
