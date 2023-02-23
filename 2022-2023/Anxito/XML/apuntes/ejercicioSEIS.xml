@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<inventario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejercicioSEIS.xsd">
+    <lapiz></lapiz>
+    <cuaderno></cuaderno>
+    <boligrafo></boligrafo>
+    <lapiz></lapiz>
+    <lapiz></lapiz>
+    <boligrafo></boligrafo>
+    <cuaderno></cuaderno>
+
+
+</inventario>

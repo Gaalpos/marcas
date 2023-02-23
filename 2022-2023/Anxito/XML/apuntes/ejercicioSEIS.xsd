@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    
+    <xsd:complexType name="tipoLapiz">
+        <xsd:sequence>
+
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <xsd:complexType name="tipoCuaderno">
+        <xsd:sequence>
+
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <xsd:complexType name="tipoBoligrafo">
+        <xsd:sequence>
+
+        </xsd:sequence>
+    </xsd:complexType>
+    
+<!--Dentro del inventario pueden ir elementos lapiz, cuaderno, o boligrafo repetidos y en cualquier orden-->
+    <xsd:complexType name="tipoInventario">
+        <xsd:sequence maxOccurs="unbounded">
+            <xsd:choice>
+                <xsd:element name="lapiz" minOccurs="0" maxOccurs="unbounded" type="tipoLapiz"/>
+                <xsd:element name="cuaderno" minOccurs="0" maxOccurs="unbounded" type="tipoCuaderno"/>
+                <xsd:element name="boligrafo" minOccurs="0" maxOccurs="unbounded" type="tipoBoligrafo"/>
+            </xsd:choice>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <!--Elemento raiz tipo lodefiniremos mas adelante-->
+    <xsd:element name="inventario" type="tipoInventario"/>
+
+</xsd:schema>
