@@ -16,12 +16,10 @@
     </xsd:complexType>
 
     <xsd:complexType name="tipoventa">
-        <xsd:sequence>
             <xsd:choice>
-                <xsd:element name="ventacredito" minOccurs="1" maxOccurs="1" type="atributosVC"/>
-                <xsd:element name="ventainmediata" minOccurs="1" maxOccurs="1" type="atributosVI"/>
+                <xsd:element name="ventacredito"  type="atributosVC"/>
+                <xsd:element name="ventainmediata" type="atributosVI"/>
             </xsd:choice>
-        </xsd:sequence>
     </xsd:complexType>
 
     <xsd:complexType name="ventas">
