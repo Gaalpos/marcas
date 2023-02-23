@@ -17,5 +17,13 @@
     <boligrafo>
         <precio>2</precio>
     </boligrafo>
+    <lapiz>
+
+    </lapiz>
+
+    <cuaderno>
+        <numHojas>300</numHojas>
+        <estilo></estilo>
+    </cuaderno>
 
 </inventario>
