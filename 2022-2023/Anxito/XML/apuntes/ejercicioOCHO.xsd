@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <!--Elemento raiz listacursos-->
+    <xsd:element name="listacursos" type="tLista"/>
+    
+    <xsd:complexType name="tLista">
+        <xsd:sequence>
+            <xsd:element name="cursos" type="tCurso" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tCurso">
+        <xsd:sequence>
+            <xsd:element name="alumno" type="tAlumno" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!--Declaracion de grupo de algo-->
+    <xsd:complexType name="tAlumno">
+        <xsd:sequence>
+            <xsd:group ref="tDatos"/>
+            <xsd:element name="listaAsignaturas" type="tListaAsignaturas"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tListaAsignaturas">
+        <xsd:sequence>
+            <xsd:element name="asignatura" type="tAsignatura" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tAsignatura">
+        <xsd:sequence>
+            <xsd:element name="nombre" type="xsd:string"/>
+            <xsd:element name="profesor" type="tProfesor"/>
+        </xsd:sequence>
+        <xsd:attribute name="codigo" type="xsd:string" use="required"/>
+    </xsd:complexType>
+    
+    <xsd:complexType name="tProfesor">
+        <xsd:sequence>
+            <xsd:element name="NRP" type="xsd:string"/>
+            <xsd:element name="nombre" type="xsd:string"/>
+            <xsd:element name="apellidoUno" type="xsd:string"/>
+            <xsd:element name="apellidoDos" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:group name="tDatos">
+        <xsd:sequence>
+            <xsd:element name="DNI" type="xsd:string"/>
+            <xsd:element name="NRP" type="xsd:string"/>
+            <xsd:element name="nombre" type="xsd:string"/>
+            <xsd:element name="apellidoUno" type="xsd:string"/>
+            <xsd:element name="apellidoDos" type="xsd:string" minOccurs="0"/>
+        </xsd:sequence>
+    </xsd:group>
+
+
+</xsd:schema>
