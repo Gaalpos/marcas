@@ -38,12 +38,13 @@
         </xsd:sequence>
     </xsd:complexType>
 
-    <xsd:complexType name="tDatos">
+    <xsd:group name="tDatos">
         <xsd:sequence>
-            <xsd:element name="DNI" type="xsd:string"/>
+            <xsd:element name="dni" type="xsd:string"/>
             <xsd:element name="nombre" type="xsd:string"/>
             <xsd:element name="apellidoUno" type="xsd:string"/>
             <xsd:element name="apellidoDos" type="xsd:string" minOccurs="0"/>
         </xsd:sequence>
-    </xsd:complexType>
+    </xsd:group>
+
 </xsd:schema>

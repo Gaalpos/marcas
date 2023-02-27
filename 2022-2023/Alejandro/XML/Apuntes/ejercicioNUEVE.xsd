@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="entrega" type="tEntrega"/>
+
+    <xs:complexType name="tEntrega">
+        <xs:sequence>
+            <xs:element name="lote" type="tLote" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="tLote">
+        <xs:sequence>
+            <xs:element name="pale" type="tPale" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tPale">
+        <xs:sequence>
+            <xs:element name=""
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
