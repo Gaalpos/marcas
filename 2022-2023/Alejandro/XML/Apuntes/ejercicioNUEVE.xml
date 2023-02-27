@@ -31,4 +31,20 @@
             <formamanipulacion>Manual</formamanipulacion>
         </pale>
     </lote>
+    <lote>
+        <pale>
+            <numcajas>7</numcajas>
+            <contenido>
+                <nombrecomponente>Procesadores</nombrecomponente>
+                <procedencia>
+                    <pais>Taiwan</pais>
+                </procedencia>
+                <numserie>7C</numserie>
+                <peso>200g</peso>
+                <unidades>20</unidades>
+            </contenido>
+            <peso>4kg</peso>
+            <formamanipulacion>Manual</formamanipulacion>
+        </pale>
+    </lote>
 </entrega>
