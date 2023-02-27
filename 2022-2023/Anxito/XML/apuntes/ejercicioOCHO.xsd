@@ -40,22 +40,27 @@
     
     <xsd:complexType name="tProfesor">
         <xsd:sequence>
-            <xsd:element name="NRP" type="xsd:string"/>
-            <xsd:element name="nombre" type="xsd:string"/>
-            <xsd:element name="apellidoUno" type="xsd:string"/>
-            <xsd:element name="apellidoDos" type="xsd:string" minOccurs="0"/>
+            <xsd:element name="nrp" type="xsd:string"/>
+           <xsd:group ref="datosBasicos"/>
         </xsd:sequence>
     </xsd:complexType>
 
     <xsd:group name="tDatos">
         <xsd:sequence>
-            <xsd:element name="DNI" type="xsd:string"/>
-            <xsd:element name="NRP" type="xsd:string"/>
+            <xsd:element name="dni" type="xsd:string"/>
+            <xsd:group ref="datosBasicos"/>
+        </xsd:sequence>
+    </xsd:group>
+
+    <!-- Datos basicos para alumno y profesor-->
+    <xsd:group name="datosBasicos">
+        <xsd:sequence>
             <xsd:element name="nombre" type="xsd:string"/>
             <xsd:element name="apellidoUno" type="xsd:string"/>
             <xsd:element name="apellidoDos" type="xsd:string" minOccurs="0"/>
         </xsd:sequence>
     </xsd:group>
 
+    <!--Como evitar la duplicidad de declaracion de NOMBRE apellido1 y apellido2-->
 
 </xsd:schema>
