@@ -7,11 +7,12 @@
             <contenido>
                 <nombrecomponente>Fuentes</nombrecomponente>
                 <numserie>3A</numserie>
-                <peso>2kg</peso>
+                <pesounidad>2kg</pesounidad>
                 <unidades>50</unidades>
             </contenido>
             <peso>100kg</peso>
             <formamanipulacion>Manual</formamanipulacion>
+            <pagado/>
         </pale>
     </lote>
     <lote>
@@ -24,7 +25,7 @@
                     <pais>Corea del Sur</pais>
                 </procedencia>
                 <numserie>5B</numserie>
-                <peso>100g</peso>
+                <pesounidad>100g</pesounidad>
                 <unidades>1000</unidades>
             </contenido>
             <peso>100kg</peso>
@@ -40,7 +41,7 @@
                     <pais>Taiwan</pais>
                 </procedencia>
                 <numserie>7C</numserie>
-                <peso>200g</peso>
+                <pesounidad>200g</pesounidad>
                 <unidades>20</unidades>
             </contenido>
             <peso>4kg</peso>

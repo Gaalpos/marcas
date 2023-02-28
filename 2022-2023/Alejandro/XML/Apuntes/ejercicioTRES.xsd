@@ -10,21 +10,17 @@
     </xsd:complexType>
 
     <xsd:complexType name="tipoproductos">
-        <xsd:sequence>
+        <xsd:choice maxOccurs="unbounded">
             <xsd:element name="raton" minOccurs="0" maxOccurs="1" type="atributos"/>
             <xsd:element name="teclado" minOccurs="0" maxOccurs="1" type="atributos"/>
             <xsd:element name="monitor" minOccurs="0" maxOccurs="1" type="atributos"/>
-        </xsd:sequence>
+        </xsd:choice>
     </xsd:complexType>
 
 
-    <xsd:complexType name="cantproductos">
-        <xsd:sequence>
-            <xsd:element name="producto" minOccurs="1" maxOccurs="unbounded" type="tipoproductos"/>
-        </xsd:sequence>
-    </xsd:complexType>
 
-<xsd:element name="productos" type="cantproductos">
+
+<xsd:element name="productos" type="tipoproductos">
 
 </xsd:element>
 </xsd:schema>
