@@ -1,4 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    
+    <xs:element name="operaciones" type="tOperaciones"/>
+
+    <xs:complexType name="tOperaciones">
+        <xs:sequence>
+            <xs:element name="operacion" type="tOperacion" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tOperacion">
+        <xs:sequence maxOccurs="unbounded">
+        <xs:choice>
+            <xs:element name="venta" type="tVenta"/>
+            <xs:element name="compra" type="tCompra"/>
+        </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tVenta">
+        <xs:sequence>
+            <xs:element name="titulosvendidos" type="tVendidos"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tVendidos">
+        <xs:sequence>
+            <xs:element name="titulo" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="cantidadtotal" type="xs:integer"/>
+            <xs:element name="entregado" type="tEntregado" minOccurs="0"/>
+            <xs:element name="importe" type="tImporte" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tEntregado">
+
+    </xs:complexType>
+
+    <xs:complexType name="tImporte">
+        <xs:simpleContent>
+            <xs:extension base="xs:int">
+            <xs:attribute name="moneda" type="xs:string" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="tCompra">
+        <xs:sequence>
+            <xs:element name="tituloscomprados" type="tComprados"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tComprados">
+        <xs:sequence>
+            <xs:element name="titulo" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="proveedor" type="xs:string" maxOccurs="1"/>
+            <xs:element name="fechacompra" type="tFecha" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="tFecha">
+        <xs:sequence>
+            <xs:element name="dia" type="xs:integer"/>
+            <xs:element name="mes" type="xs:integer"/>
+            <xs:element name="anio" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
 </xs:schema>
