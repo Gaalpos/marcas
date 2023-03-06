@@ -5,7 +5,7 @@
     <xs:complexType name="tFactura">
         <xs:sequence>
             <xs:element name="datos_empresa" type="tEmpresa"/>
-            <xs:element name="datos_cliente" type="tCliente"/>
+            <xs:element name="datos_cliente" type="tDatosCliente"/>
             <xs:element name="datos_factura" type="tDatosFactura"/>
         </xs:sequence>
         <xs:attribute name="n_fac" type="xs:int" use="required"/>
@@ -13,10 +13,10 @@
 
     <xs:complexType name="tEmpresa">
         <xs:sequence>
-            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="nombre" type="tNombre"/>
             <xs:element name="dir" type="xs:string"/>
             <xs:element name="poblacion" type="tPoblacion"/>
-            <xs:element name="provincia" type="xs:string"/>
+            <xs:element name="provincia" type="tProvincia"/>
             <xs:element name="cif" type="xs:string"/>
             <xs:element name="telefono" type="tTelefono"/>
         </xs:sequence>
@@ -30,6 +30,62 @@
         </xs:simpleContent>
     </xs:complexType>
 
-    <xs:complexType name="ttelefono"/>
+    <xs:complexType name="tDatosCliente">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="dir_env" type="xs:string"/>
+            <xs:element name="poblacion" type="tPoblacion"/>
+            <xs:element name="provincia" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="n_cli" use="required" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="tDatosFactura">
+        <xs:sequence>
+            <xs:element name="fecha" type="xs:date"/>
+            <xs:element name="linea" type="tLinea" maxOccurs="unbounded"/>
+            <xs:element name="base" type="xs:int"/>
+            <xs:element name="cuota_iva" type="xs:float"/>
+            <xs:element name="total" type="xs:float"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="tFactura">
+
+
+        </xs:attributeGroup>
+
+    </xs:complexType>
+<xs:complexType name="tFactura">
+    <xs:attribute name="n_ped" type="xs:int" use="required"/>
+    <xs:attribute name="iva" type="xs:int" use="required"/>
+    <xs:attribute name="f_pago" type="xs:string" use="optional"/>
+    <xs:attribute name="moneda" type="xs:string" use="optional"/>
+</xs:complexType>
+
+
+
+    <xs:complexType name="tLinea">
+        <xs:sequence>
+            <xs:element name="ref" type="xs:string"/>
+            <xs:element name="desc" type="xs:string"/>
+            <xs:element name="cant" type="xs:int"/>
+            <xs:element name="precio" type="xs:int"/>
+            <xs:element name="importe" type="xs:float"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tTelefono"/>
+
+    <xs:complexType name="tNombre">
+       <xs:simpleContent>
+           <xs:extension base="xs:string"/>
+       </xs:simpleContent>
+
+    </xs:complexType>
+
+    <xs:complexType name="tProvincia">
+        <xs:simpleContent>
+            <xs:extension base="xs:string"/>
+        </xs:simpleContent>
+    </xs:complexType>
 
 </xs:schema>
