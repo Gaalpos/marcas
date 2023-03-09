@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!--Un raton o un teclado o un monitor-->
+
+    <xsd:element name="productos">
+        <xsd:complexType>
+            <xsd:choice maxOccurs="unbounded">
+                <xsd:element name="raton" type="xsd:string"/>
+                <xsd:element name="teclado" type="xsd:string"/>
+                <xsd:element name="monitor" type="xsd:string"/>
+            </xsd:choice>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="atributos">
+        <xsd:sequence>
+            <xsd:element name="codigo" type="xsd:long" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="nombre" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="descripcion" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>

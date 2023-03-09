@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<desayunos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="ejemplo3.xsd">
+    <comida>
+        <name>Belgian Waffles</name>
+        <precio>$5.95</precio>
+        <descripcion>
+            Two of our famous Belgian Waffles with plenty of real maple syrup
+        </descripcion>
+        <calorias>650</calorias>
+    </comida>
+    <comida>
+        <name>Strawberry Belgian Waffles</name>
+        <precio>$7.95</precio>
+        <descripcion>
+            Light Belgian waffles covered with strawberries and whipped cream
+        </descripcion>
+        <calorias>900</calorias>
+    </comida>
+    <comida>
+        <name>Berry-Berry Belgian Waffles</name>
+        <precio>$8.95</precio>
+        <descripcion>
+            Belgian waffles covered with assorted fresh berries and whipped cream
+        </descripcion>
+        <calorias>900</calorias>
+    </comida>
+    <comida>
+        <name>French Toast</name>
+        <precio>$4.50</precio>
+        <descripcion>
+            Thick slices made from our homemade sourdough bread
+        </descripcion>
+        <calorias>600</calorias>
+    </comida>
+    <comida>
+        <name>Homestyle Breakfast</name>
+        <precio>$6.95</precio>
+        <descripcion>
+            Two eggs, bacon or sausage, toast, and our ever-popular hash browns
+        </descripcion>
+        <calorias>950</calorias>
+    </comida>
+</desayunos>

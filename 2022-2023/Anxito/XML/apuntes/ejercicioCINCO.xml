@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<listaVentas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="ejercicioCINCO.xsd">
+
+    <listaCompras>
+        <venta>
+            <ventaCredito>
+                <fechafinpago></fechafinpago>
+                <cantidad></cantidad>
+            </ventaCredito>
+        </venta>
+
+        <venta>
+            <ventaInmediata>
+                <cantidad></cantidad>
+                <divisa></divisa>
+            </ventaInmediata>
+        </venta>
+    </listaCompras>
+
+    <listaCompras>
+
+        <venta>
+            <ventaCredito>
+                <cantidad></cantidad>
+            </ventaCredito>
+        </venta>
+
+
+    </listaCompras>
+
+</listaVentas>

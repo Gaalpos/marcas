@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- definicion de desayunos  -->
+    <xs:element name="desayuno" type="tipoDesayuno" />
+    <xs:complexType name="tipoDesayuno">
+        <xs:sequence>
+            <xs:element name="comida" type="hambre" maxOccurs="unbounded" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    <!--Declaracion de tipo de elemento-->
+    <xs:complexType name="hambre">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="precio" type="xs:string"/>
+            <xs:element name="descripcion" type="xs:string"/>
+            <xs:element name="calorias" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

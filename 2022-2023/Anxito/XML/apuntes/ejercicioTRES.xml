@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<productos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="ejercicioTRES.xsd">
+    <producto>
+        <raton>
+            <codigo>120</codigo>
+            <nombre>razer</nombre>
+            <descripcion>raton inalambrico</descripcion>
+        </raton>
+    </producto>
+
+    <producto>
+        <teclado>
+            <codigo>128</codigo>
+            <nombre>razer</nombre>
+            <descripcion>teclado mecanico</descripcion>
+        </teclado>
+    </producto>
+
+    <producto>
+        <monitor>
+            <codigo>230</codigo>
+            <nombre>Samsung 2000</nombre>
+            <descripcion>Tele de gama alta</descripcion>
+        </monitor>
+    </producto>
+
+</productos>

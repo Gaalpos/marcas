@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<listaVentas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejercicioCUATRO.xsd">
+<venta>
+    <Importe>23.34</Importe>
+    <Comprador>Anxo</Comprador>
+    <Vendedor>SinPa</Vendedor>
+    <codigo>U8ISU</codigo>
+</venta>
+
+    <venta>
+        <Importe>34.12</Importe>
+        <Comprador>Alejandro</Comprador>
+        <Vendedor>Gaalpos</Vendedor>
+        <codigo>803JGUI3</codigo>
+    </venta>
+
+    <venta>
+        <Importe>50.05</Importe>
+        <Comprador>Pepe</Comprador>
+        <Vendedor>Angel</Vendedor>
+        <codigo>8ONHF843</codigo>
+    </venta>
+
+</listaVentas>

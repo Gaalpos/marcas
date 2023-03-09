@@ -1,0 +1,23 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="nota">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="para" type="xs:string"/>
+                <xs:element name="de" type="xs:string"/>
+
+                <!--declaracion de atributo-->
+                <xs:element name="asunto">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute type="xs:string" name="importancia" use="optional"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="contenido" type="xs:string"/>
+                <xs:element name="extra" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
