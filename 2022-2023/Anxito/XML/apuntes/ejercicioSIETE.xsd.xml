@@ -1,0 +1,13 @@
+<listafacturas fecha="2008-09-29">
+  <factura>
+    <emisor>
+      <nombre>string</nombre>
+      <volumen>1.5E2</volumen>
+    </emisor>
+    <pagador>
+      <nombre>string</nombre>
+      <volumen>1.5E2</volumen>
+    </pagador>
+    <importe>1.5E2</importe>
+  </factura>
+</listafacturas>

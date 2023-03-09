@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<listafacturas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ejercicioSIETE.xsd">
+    <factura fecha="2008-09-29">
+        <emisor cif="12345678">
+            <nombre>string</nombre>
+            <volumen>1.5E2</volumen>
+        </emisor>
+        <pagador cif="345687">
+            <nombre>string</nombre>
+            <volumen>1.5E2</volumen>
+        </pagador>
+        <importe>1.5E2</importe>
+    </factura>
+</listafacturas>

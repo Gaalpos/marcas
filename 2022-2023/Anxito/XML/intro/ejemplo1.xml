@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nota xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="ejemplo1.xsd">
+    <para>Tove</para>
+    <de>Jani</de>
+    <asunto importancia="alta">Recuerda</asunto>
+    <contenido>No me olvides este fin de semana!</contenido>
+    <extra></extra>
+</nota>

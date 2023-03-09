@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<listaventas xmlns:xsi="http://www.w3.org/2001/XMLSchema"
+xsi:noNamespaceSchemaLocation="ejercicioUNO.xsd">
+
+    <venta>
+        <importe>1</importe>
+        <comprador>manolo</comprador>
+        <vendedor>rafa</vendedor>
+        <codigo>128</codigo>
+    </venta>
+
+
+    <venta>
+        <importe>2</importe>
+        <comprador>manolo</comprador>
+        <vendedor>rafa</vendedor>
+        <codigo>128</codigo>
+    </venta>
+
+    <venta>
+        <importe>1</importe>
+        <comprador>manolo</comprador>
+        <vendedor>rafa</vendedor>
+        <codigo>128</codigo>
+    </venta>
+
+
+
+
+
+
+
+
+</listaventas>

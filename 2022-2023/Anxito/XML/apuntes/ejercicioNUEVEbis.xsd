@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="entrega" type="tEntrega"/>
+
+    <xs:complexType name="tEntrega">
+        <xs:sequence>
+            <xs:element name="lote" type="tLote" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="tLote">
+        <xs:sequence>
+            <xs:element name="pale" type="tPale" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tPale">
+        <xs:sequence>
+            <xs:element name="pagado" minOccurs="0" type="tVacio"/>
+            <xs:element name="numcajas" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="contenido" type="tContenido" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="peso" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="formamanipulacion" type="xs:string" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tContenido">
+        <xs:sequence>
+            <xs:element name="nombrecomponente" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="procedencia" type="tProcedencia" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="numserie" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="peso" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="unidades" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tProcedencia">
+        <xs:sequence>
+            <xs:element name="pais" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!--Declaramos un tipo de dato sin contenido-->
+    <xs:complexType name="tVacio">
+    </xs:complexType>
+</xs:schema>

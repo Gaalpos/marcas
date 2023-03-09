@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<clientes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="ejemplo1.xsd">
+    <cliente>
+        <nombre>AcerSA</nombre>
+        <cif>5664332</cif>
+    </cliente>
+    <cliente>
+        <nombre>Mer Sl</nombre>
+        <cif>5111444</cif>
+    </cliente>
+</clientes>

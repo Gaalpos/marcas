@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="clientes" type="aparte2"/>
+
+    <!-- aparte1 -->
+        <xsd:complexType name="aparte1">
+            <xsd:sequence>
+                <xsd:element name="nombre" type="xsd:string"/>
+                <xsd:element name="cif" type="xsd:long"/>
+            </xsd:sequence>
+        </xsd:complexType>
+
+<!--aparte2 -->
+            <xsd:complexType name="aparte2">
+                <xsd:sequence>
+                    <xsd:element name="cliente" maxOccurs="unbounded" type="aparte1"/>
+                </xsd:sequence>
+            </xsd:complexType>
+
+
+</xsd:schema>
