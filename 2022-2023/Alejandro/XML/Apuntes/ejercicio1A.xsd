@@ -25,12 +25,16 @@
     </xsd:complexType>
 
     <xsd:complexType name="tFecha">
-        <xsd:attribute name="dato" type="xsd:string" use="required"/>
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="dato" use="required"/>
+            </xsd:extension>
+        </xsd:simpleContent>
     </xsd:complexType>
 
     <xsd:complexType name="tActores">
         <xsd:sequence>
-            <xsd:element name="actor" type="tActor"/>
+            <xsd:element name="actor" type="tActor" maxOccurs="unbounded"/>
         </xsd:sequence>
     </xsd:complexType>
 
@@ -39,7 +43,7 @@
             <xsd:extension base="xsd:string">
                 <xsd:attribute name="nombre" use="required"/>
                 <xsd:attribute name="nacimiento" use="required"/>
-                <xsd:attribute name="muerte" use="required"/>
+                <xsd:attribute name="muerte" use="optional"/>
             </xsd:extension>
         </xsd:simpleContent>
 
@@ -47,7 +51,7 @@
 
     <xsd:complexType name="tPeliculas">
         <xsd:sequence>
-            <xsd:element name="pelicula" type="tPelicula"/>
+            <xsd:element name="pelicula" type="tPelicula" maxOccurs="unbounded"/>
         </xsd:sequence>
     </xsd:complexType>
 
@@ -62,11 +66,19 @@
     </xsd:complexType>
 
     <xsd:complexType name="tTitulo">
-        <xsd:attribute name="lang" type="xsd:string" use="required"/>
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="lang" use="required"/>
+            </xsd:extension>
+        </xsd:simpleContent>
     </xsd:complexType>
 
     <xsd:complexType name="tEstudios2">
-        <xsd:attribute name="nombre" type="xsd:string" use="required"/>
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="nombre" type="xsd:string" use="required"/>
+            </xsd:extension>
+        </xsd:simpleContent>
     </xsd:complexType>
 
     <xsd:complexType name="tOscar">
