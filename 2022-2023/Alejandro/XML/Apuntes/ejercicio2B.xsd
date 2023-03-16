@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="arboles" type="tArboles"/>
+
+    <xsd:complexType name="tArboles">
+        <xsd:sequence>
+            <xsd:element name="arbol" type="tArbol" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tArbol">
+        <xsd:sequence>
+            <xsd:element name="nombreLatin" type="xsd:string"/>
+            <xsd:element name="nombreComun" type="xsd:string"/>
+            <xsd:element name="vegetacion" type="xsd:string"/>
+            <xsd:element name="altura" type="xsd:string"/>
+            <xsd:element name="formaEstructura" type="xsd:string"/>
+            <xsd:element name="colorPrimavera" type="xsd:string"/>
+            <xsd:element name="resistenciaHeladas" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<arboles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ejercicio2B.xsd">
+    <arbol>
+        <nombreLatin>Acer monspessulanum</nombreLatin>
+        <nombreComun>Arce de Montpellier, Arce menor</nombreComun>
+        <vegetacion>Caducifolio</vegetacion>
+        <altura>De 6 a 10 metros</altura>
+        <formaEstructura>Copa esférica. Tronco principal recto con
+            bifurcaciones. Ramaje colgante</formaEstructura>
+        <colorPrimavera>Haz verde brillante, envés verde blanquecino</colorPrimavera>
+        <resistenciaHeladas>Heladas fuertes (hasta -15ºC)</resistenciaHeladas>
+    </arbol>
+
+    <arbol>
+        <nombreLatin>Olea europea</nombreLatin>
+        <nombreComun>Olivo</nombreComun>
+        <vegetacion>Perenne</vegetacion>
+        <altura>De 8 a 15 metros</altura>
+        <formaEstructura>Copa irregular. Tronco principal irregular
+            con bifurcaciones.
+            Ramaje tortuoso</formaEstructura>
+        <colorPrimavera>Haz verde oscuro, envés verde plateado</colorPrimavera>
+        <resistenciaHeladas>Heladas medias (hasta -10ºC)</resistenciaHeladas>
+    </arbol>
+
+    <arbol>
+        <nombreLatin>Platanus orientalis</nombreLatin>
+        <nombreComun>Plátano</nombreComun>
+        <vegetacion>Caducifolio</vegetacion>
+        <altura>De 20 a 25 metros</altura>
+        <formaEstructura>Copa ovoidal. Tronco principal recto. Ramaje
+            expandido</formaEstructura>
+        <colorPrimavera>Haz verde medio, enves verde claro
+            Color en otoño: Ocre</colorPrimavera>
+        <resistenciaHeladas>Heladas fuertes (hasta -20ºC)</resistenciaHeladas>
+    </arbol>
+
+    <arbol>
+        <nombreLatin>Quercus ilex</nombreLatin>
+        <nombreComun>Encina</nombreComun>
+        <vegetacion>Perenne</vegetacion>
+        <altura>En torno a 25 metros</altura>
+        <formaEstructura>Copa esférica o elíptica irregular. Tronco
+            principal recto. Ramaje tortuoso</formaEstructura>
+        <colorPrimavera>Plateado en hojas jóvenes. En hojas
+            antiguas, haz verde oscuro, envés plateado</colorPrimavera>
+        <resistenciaHeladas>Heladas fuertes (hasta -15ºC)</resistenciaHeladas>
+    </arbol>
+</arboles>
