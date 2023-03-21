@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="peso" type="tPeso"/>
+
+    <xsd:simpleType name="tPeso">
+        <xsd:restriction base="xsd:decimal">
+            <xsd:minInclusive value="0"/>
+            <xsd:maxExclusive value="1000"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:element name="pago" type="tPago"/>
+
+    <xsd:simpleType name="tPago">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="0"/>
+            <xsd:maxExclusive value="3000"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>
