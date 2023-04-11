@@ -1,0 +1,38 @@
+body {
+    margin: 40px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-template-rows: 100px 100px 100px;
+    background-color: white;
+    color: black;
+    border: 2px;
+    border-color: black;
+    text-align: center;
+}
+
+.gridtrack {
+    background-color: #ffc400;
+    grid-column: 1;
+    grid-row: 1 / 4;
+}
+
+.gridarea {
+    background-color: rgb(240, 151, 166);
+    grid-column: 3 / 5;
+    grid-row: 2 / 4;
+}
+
+.gridcell {
+    background-color: rgb(35, 90, 87);
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.grid {
+    background-color: rgb(255, 123, 0);
+}

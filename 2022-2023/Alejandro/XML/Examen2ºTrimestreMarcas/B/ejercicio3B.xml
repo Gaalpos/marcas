@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TVSCHEDULE NAME="Programacion" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="ejercicio3B.xsd">
+    <CHANNEL CHAN="Antena3">
+        <BANNER>Las mejores series</BANNER>
+        <DAY>
+            <DATE>24 de Julio</DATE>
+            <PROGRAMSLOT VTR="GRABADO">
+                <TIME>17:00</TIME>
+                <TITLE>Pasapalabra</TITLE>
+            </PROGRAMSLOT>
+            <PROGRAMSLOT>
+                <TIME>18:00</TIME>
+                <TITLE>El Hormiguero</TITLE>
+            </PROGRAMSLOT>
+            <PROGRAMSLOT>
+                <TIME>19:00</TIME>
+                <TITLE>Noticias 2</TITLE>
+            </PROGRAMSLOT>
+            <PROGRAMSLOT>
+                <TIME>20:00</TIME>
+                <TITLE>Cine Familiar</TITLE>
+            </PROGRAMSLOT>
+        </DAY>
+        <DAY>
+            <DATE>25 de Julio</DATE>
+            <PROGRAMSLOT>
+                <TIME>12:00</TIME>
+                <TITLE RATING="CINCO" LANGUAGE="GALLEGO">Especial Santiago de compostela</TITLE>
+                <DESCRIPTION>Desde la Plaza del Obradoiro</DESCRIPTION>
+            </PROGRAMSLOT>
+            <PROGRAMSLOT>
+                <TIME>15:00</TIME>
+                <TITLE>Noticias 1</TITLE>
+                <DESCRIPTION>Las mejores noticias</DESCRIPTION>
+            </PROGRAMSLOT>
+            <HOLIDAY>Fuegos Artificiales</HOLIDAY>
+        </DAY>
+    </CHANNEL>
+    <CHANNEL CHAN="Telecinco1">
+        <BANNER>El entretenimiento por bandera</BANNER>
+        <DAY><DATE>25 de Julio</DATE>
+            <HOLIDAY>La isla</HOLIDAY>
+            <HOLIDAY>La pelicula del festivo</HOLIDAY>
+        </DAY>
+        <DAY>
+            <DATE>26 de Julio</DATE>
+            <HOLIDAY>Otra vez la isla</HOLIDAY>
+            <HOLIDAY>Otra pelicula del festivo</HOLIDAY>
+        </DAY>
+    </CHANNEL>
+</TVSCHEDULE>

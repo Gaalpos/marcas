@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="productos" type="aparte3">
+
+    </xsd:element>
+
+
+    <xsd:element name="codigo" type="xsd:string"/>
+
+
+    <xsd:complexType name="aparte1">
+        <xsd:sequence>
+            <xsd:element ref="codigo"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+
+    <xsd:complexType name="aparte2">
+        <xsd:sequence>
+            <xsd:element ref="codigo"/>
+            <xsd:element name="descripcion" maxOccurs="unbounded" type="xsd:string"/>
+            <xsd:element name="peso" maxOccurs="unbounded" type="xsd:int"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="aparte3">
+        <xsd:sequence>
+            <xsd:element name="raton" type="aparte1"/>
+            <xsd:element name="teclado" type="aparte2"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>
+

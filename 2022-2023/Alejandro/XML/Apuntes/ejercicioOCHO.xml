@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<listacursos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="ejercicioOCHO.xsd">
+    <!--1 or more repetitions:-->
+    <cursos>
+        <!--1 or more repetitions:-->
+        <alumno>
+            <dni>string</dni>
+            <nombre>string</nombre>
+            <apellidoUno>string</apellidoUno>
+            <!--Optional:-->
+            <apellidoDos>string</apellidoDos>
+            <listaAsignaturas>
+                <!--1 or more repetitions:-->
+                <asignatura codigo="string">
+                    <nombre>string</nombre>
+                    <profesor>
+                        <nrp>string</nrp>
+                        <nombre>string</nombre>
+                        <apellidoUno>string</apellidoUno>
+                        <!--Optional:-->
+                        <apellidoDos>string</apellidoDos>
+                    </profesor>
+                </asignatura>
+            </listaAsignaturas>
+        </alumno>
+    </cursos>
+</listacursos>

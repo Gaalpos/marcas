@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:complexType name="atributos">
+        <xsd:sequence>
+            <xsd:element name="codigo" type="xsd:long" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="nombre" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="descripcion" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tipoproductos">
+        <xsd:choice maxOccurs="unbounded">
+            <xsd:element name="raton" minOccurs="0" maxOccurs="1" type="atributos"/>
+            <xsd:element name="teclado" minOccurs="0" maxOccurs="1" type="atributos"/>
+            <xsd:element name="monitor" minOccurs="0" maxOccurs="1" type="atributos"/>
+        </xsd:choice>
+    </xsd:complexType>
+
+
+
+
+<xsd:element name="productos" type="tipoproductos">
+
+</xsd:element>
+</xsd:schema>

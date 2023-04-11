@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<factura fecEmision="2022-08-10" numero="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ejercicio1B.xsd">
+    <datos-emisor>
+        <nombre>Pablo</nombre>
+        <CIF>12345678-A</CIF>
+        <telefono>123456789</telefono>
+    </datos-emisor>
+    <datos-cliente>
+        <nombre>Marco</nombre>
+        <CIF>87654321-B</CIF>
+        <telefono>987654321</telefono>
+    </datos-cliente>
+    <detalle-factura importe="36">
+        <linea codArticulo="BN1" Tipo="DVD">
+            <descripcion>DVD de la pelicula de Cars</descripcion>
+            <cantidad>1</cantidad>
+            <oferta/>
+        </linea>
+    </detalle-factura>
+</factura>

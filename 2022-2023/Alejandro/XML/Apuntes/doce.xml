@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<listado xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="doce.xsd">
+    <futuro precio="11.28">
+        <producto>Cafe</producto>
+        <mercado>América Latina</mercado>
+        <ciudad_procedencia>Frankfurt</ciudad_procedencia>
+    </futuro>
+    <divisa precio="183">
+        <nombre_divisa>Libra esterlina</nombre_divisa>
+        <tipo_de_cambio>2.7:1 euros</tipo_de_cambio>
+        <tipo_de_cambio>1:0.87 dólares</tipo_de_cambio>
+        <ciudad_procedencia>Madrid</ciudad_procedencia>
+    </divisa>
+    <bono precio="10000" estable="si">
+        <pais_de_procedencia>Islandia</pais_de_procedencia>
+        <valor_deseado>9980</valor_deseado>
+        <valor_minimo>9950</valor_minimo>
+        <valor_maximo>10020</valor_maximo>
+        <ciudad_procedencia>Tokio</ciudad_procedencia>
+    </bono>
+    <letra precio="45020">
+        <tipo_de_interes>4.54%</tipo_de_interes>
+        <pais_emisor>España</pais_emisor>
+        <ciudad_procedencia>Madrid</ciudad_procedencia>
+    </letra>
+</listado>

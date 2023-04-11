@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="factura" type="tFactura"/>
+    
+    <xs:complexType name="tFactura">
+       <xs:sequence>
+           <xs:element name="datos-emisor" type="tDatos"/>
+           <xs:element name="datos-cliente" type="tDatos"/>
+           <xs:element name="detalle-factura" type="tDetalleFactura"/>
+       </xs:sequence>
+        <xs:attribute name="numero" type="tNumero" use="required"/>
+        <xs:attribute name="fecEmision" type="xs:date" use="required"/>
+        <xs:attribute name="moneda" type="tMoneda" use="optional"/>
+    </xs:complexType>
+
+    <xs:complexType name="tDatos">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="CIF" type="tCIF"/>
+            <xs:element name="telefono" type="tTelefono"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="tCIF">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{8}[-]{1}[A-Z]{1}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="tTelefono">
+        <xs:restriction base="xs:int">
+            <xs:pattern value="[0-9]{9}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="tNumero">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tMoneda">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="euro"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:complexType name="tDetalleFactura">
+        <xs:sequence>
+            <xs:element name="linea" type="tLinea" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="importe" type="xs:int" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="tLinea">
+        <xs:sequence>
+            <xs:element name="descripcion" type="xs:string"/>
+            <xs:element name="cantidad" type="xs:int"/>
+            <xs:element name="oferta" type="tOferta" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="codArticulo" type="tCod" use="required"/>
+        <xs:attribute name="Tipo" type="tTipo" use="optional"/>
+    </xs:complexType>
+
+    <xs:complexType name="tOferta"/>
+
+    <xs:simpleType name="tCod">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{2}[0-9]{1}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tTipo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Libro"/>
+            <xs:enumeration value="DVD"/>
+            <xs:enumeration value="Varios"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+
+
+</xs:schema>

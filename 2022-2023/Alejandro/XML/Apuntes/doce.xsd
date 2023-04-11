@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="listado" type="tListado"/>
+
+    <xs:complexType name="tListado">
+        <xs:sequence>
+            <xs:element name="futuro" type="tFuturo" maxOccurs="unbounded"/>
+            <xs:element name="divisa" type="tDivisa" maxOccurs="unbounded"/>
+            <xs:element name="bono" type="tBono" maxOccurs="unbounded"/>
+            <xs:element name="letra" type="tLetra" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tFuturo">
+        <xs:sequence>
+            <xs:element name="producto" type="xs:string"/>
+            <xs:element name="mercado" type="xs:string"/>
+            <xs:element name="ciudad_procedencia" type="tCiudad"/>
+        </xs:sequence>
+        <xs:attribute name="precio" type="xs:float" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="tDivisa">
+        <xs:sequence>
+            <xs:element name="nombre_divisa" type="xs:string"/>
+            <xs:element name="tipo_de_cambio" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="ciudad_procedencia" type="tCiudad"/>
+        </xs:sequence>
+        <xs:attribute name="precio" type="xs:float" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="tBono">
+        <xs:sequence>
+            <xs:element name="pais_de_procedencia" type="xs:string"/>
+            <xs:element name="valor_deseado" type="xs:int"/>
+            <xs:element name="valor_minimo" type="xs:int"/>
+            <xs:element name="valor_maximo" type="xs:int"/>
+            <xs:element name="ciudad_procedencia" type="tCiudad"/>
+        </xs:sequence>
+        <xs:attribute name="precio" type="xs:float" use="required"/>
+        <xs:attribute name="estable" type="xs:string" use="optional"/>
+    </xs:complexType>
+
+    <xs:complexType name="tLetra">
+        <xs:sequence>
+            <xs:element name="tipo_de_interes" type="xs:string"/>
+            <xs:element name="pais_emisor" type="tPais"/>
+            <xs:element name="ciudad_procedencia" type="tCiudad"/>
+        </xs:sequence>
+        <xs:attribute name="precio" type="xs:int" use="required"/>.
+    </xs:complexType>
+
+    <xs:complexType name="tCiudad">
+ <xs:simpleContent>
+     <xs:restriction base="xs:string">
+         <xs:enumeration value="Frankfurt"/>
+         <xs:enumeration value="New York"/>
+         <xs:enumeration value="Madrid"/>
+         <xs:enumeration value="Tokio"/>
+     </xs:restriction>
+ </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="tPais">
+        <xs:simpleContent>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="España"/>
+                <xs:enumeration value="Alemania"/>
+                <xs:enumeration value="USA"/>
+                <xs:enumeration value="Japon"/>
+            </xs:restriction>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:schema>

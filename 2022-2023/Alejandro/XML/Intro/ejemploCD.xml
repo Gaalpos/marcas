@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<coleccion>
+    <cd>
+        <artista>Pablo Alborán</artista>
+        <contenido>Musica</contenido>
+        <cancion>Saturno</cancion>
+
+    </cd>
+    <cd>
+        <artista>Orozco</artista>
+        <contenido>Musica</contenido>
+        <cancion></cancion>
+
+    </cd>
+    <cd>
+        <artista>Melendi</artista>
+        <contenido>Musica</contenido>
+        <cancion></cancion>
+
+    </cd>
+    <cd>
+        <artista>Rosalia</artista>
+        <contenido>Musica</contenido>
+        <cancion></cancion>
+
+    </cd>
+    <cd>
+        <artista>Quevedo</artista>
+        <contenido>Musica</contenido>
+        <cancion></cancion>
+
+    </cd>
+
+</coleccion>

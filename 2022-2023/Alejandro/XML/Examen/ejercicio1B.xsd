@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="musica" type="tMusica"/>
+
+    <xsd:complexType name="tMusica">
+        <xsd:sequence>
+            <xsd:element name="musicos" type="tMusicos"/>
+            <xsd:element name="obras" type="tObras"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tMusicos">
+        <xsd:sequence>
+            <xsd:element name="musico" type="tMusico" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tMusico">
+        <xsd:sequence>
+            <xsd:element name="nombre" type="xsd:string"/>
+            <xsd:element name="fechas" type="tFechas"/>
+            <xsd:element name="pais" type="xsd:string"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:string" use="required"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="tFechas">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="nacimiento" use="required"/>
+                <xsd:attribute name="muerte" use="optional"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="tObras">
+        <xsd:sequence>
+            <xsd:element name="obra" type="tObra" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tObra">
+        <xsd:sequence>
+            <xsd:element name="autor" type="xsd:string"/>
+            <xsd:element name="nombre" type="xsd:string"/>
+            <xsd:element name="genero" type="tGenero"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tGenero">
+        <xsd:sequence>
+            <xsd:element name="instrumento" type="xsd:string" maxOccurs="unbounded"/>
+        </xsd:sequence>
+        <xsd:attribute name="nombre" type="xsd:string" use="required"/>
+    </xsd:complexType>
+</xsd:schema>

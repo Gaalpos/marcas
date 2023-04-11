@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="hitchcock" type="tHitchcock"/>
+
+    <xsd:complexType name="tHitchcock">
+        <xsd:sequence>
+            <xsd:element name="estudios" type="tEstudios"/>
+            <xsd:element name="actores" type="tActores"/>
+            <xsd:element name="peliculas" type="tPeliculas"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tEstudios">
+        <xsd:sequence>
+            <xsd:element name="estudio" type="tEstudio" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tEstudio">
+        <xsd:sequence>
+            <xsd:element name="nombre" type="xsd:string"/>
+            <xsd:element name="fecha" type="tFecha"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:string" use="required"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="tFecha">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="dato" use="required"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="tActores">
+        <xsd:sequence>
+            <xsd:element name="actor" type="tActor" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tActor">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="nombre" use="required"/>
+                <xsd:attribute name="nacimiento" use="required"/>
+                <xsd:attribute name="muerte" use="optional"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+
+    </xsd:complexType>
+
+    <xsd:complexType name="tPeliculas">
+        <xsd:sequence>
+            <xsd:element name="pelicula" type="tPelicula" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tPelicula">
+        <xsd:sequence>
+            <xsd:element name="titulo" type="tTitulo" maxOccurs="unbounded"/>
+            <xsd:element name="fecha" type="tFecha"/>
+            <xsd:element name="estudios" type="tEstudios2"/>
+            <xsd:element name="oscar" type="tOscar"/>
+            <xsd:element name="actores" type="tActores2"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tTitulo">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="lang" use="required"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="tEstudios2">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="nombre" type="xsd:string" use="required"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+
+    <xsd:complexType name="tOscar">
+        <xsd:attribute name="nominaciones" type="xsd:int" use="required"/>
+        <xsd:attribute name="premios" type="xsd:int" use="required"/>
+    </xsd:complexType>
+
+    <xsd:complexType name="tActores2">
+        <xsd:sequence>
+            <xsd:element name="actor" type="xsd:string"/>
+            <xsd:element name="actriz" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

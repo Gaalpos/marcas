@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="CATALOG" type="tipoCatalogo"/>
+
+
+
+
+
+    <xs:complexType name="tipoCatalogo">
+        <xs:sequence>
+            <xs:element name="CD"  type="tipoCD" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+
+
+    <xs:complexType name="tipoCD">
+        <xs:sequence>
+            <xs:element name="TITLE" type="xs:string"></xs:element>
+            <xs:element name="ARTIST" type="xs:string"></xs:element>
+            <xs:element name="COUNTRY" type="xs:string"></xs:element>
+            <xs:element name="COMPANY" type="xs:string"></xs:element>
+            <xs:element name="PRICE" type="xs:double"></xs:element>
+            <xs:element name="YEAR" type="xs:int"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
+
+
+

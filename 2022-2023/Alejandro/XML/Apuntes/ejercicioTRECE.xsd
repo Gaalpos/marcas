@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+    <xsd:element name="listado" type="tListado"/>
+
+    <xsd:complexType name="tListado">
+        <xsd:sequence>
+            <xsd:element name="afiliado" type="tAfiliado" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <!--
+    .-->
+
+    <xsd:complexType name="tAfiliado">
+        <xsd:sequence>
+            <xsd:choice>
+                <xsd:element name="DNI" type="xsd:string"/>
+                <xsd:element name="NIE" type="xsd:string"/>
+            </xsd:choice>
+            <xsd:element name="Nombre" type="xsd:string"/>
+            <xsd:element name="Apellidos" type="xsd:string"/>
+            <xsd:element name="situacion_laboral" type="tLaboral"/>
+            <xsd:element name="fecha_nacimiento" type="tFecha"/>
+            <xsd:element name="listado_bajas" type="tBajas" />
+            <xsd:element name="listado_prestaciones" type="tLPrestaciones"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tLPrestaciones">
+        <xsd:sequence>
+            <xsd:element name="prestacion" type="tPrestacion" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tPrestacion">
+        <xsd:sequence>
+            <xsd:element name="cantidad" type="xsd:float"/>
+            <xsd:element name="inicio" type="tFecha"/>
+            <xsd:element name="final" type="tFecha"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tBajas">
+        <xsd:sequence>
+            <xsd:element name="baja" type="tBaja" minOccurs="0" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="tBaja">
+        <xsd:sequence>
+            <xsd:element name="causa" type="xsd:string"/>
+            <xsd:element name="fehca_incio" type="tFecha"/>
+            <xsd:element name="fecha_final" type="tFecha" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="tLaboral">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="en_paro"/>
+            <xsd:enumeration value="en_activo"/>
+            <xsd:enumeration value="jubilado"/>
+            <xsd:enumeration value="edad_no_laboral"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="tFecha">
+        <xsd:sequence>
+            <xsd:element name="dia" type="xsd:int"/>
+            <xsd:element name="mes" type="xsd:int"/>
+            <xsd:element name="año" type="xsd:int"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>

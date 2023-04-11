@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<listaventas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="ejercicioCINCO.xsd">
+    <venta>
+        <ventacredito>
+            <fechafinpago>2023-07-21</fechafinpago>
+            <cantidad>31</cantidad>
+        </ventacredito>
+    </venta>
+    <venta>
+        <ventainmediata>
+            <cantidad>12</cantidad>
+            <divisa>Euro</divisa>
+        </ventainmediata>
+    </venta>
+    <venta>
+        <ventacredito>
+            <cantidad>2</cantidad>
+        </ventacredito>
+    </venta>
+    <venta>
+        <ventainmediata>
+            <cantidad>21</cantidad>
+            <divisa>Libra</divisa>
+        </ventainmediata>
+    </venta>
+    <venta>
+        <ventainmediata>
+            <cantidad>38</cantidad>
+            <divisa>Dólar</divisa>
+        </ventainmediata>
+    </venta>
+</listaventas>

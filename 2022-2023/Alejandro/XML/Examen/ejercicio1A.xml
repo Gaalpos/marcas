@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hitchcock xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="ejercicio1A.xsd">
+
+    <estudios>
+        <estudio id="warner">
+            <nombre>Warner Bros.</nombre>
+            <fecha dato="nacimiento">1923</fecha>
+        </estudio>
+        <estudio id="paramount">
+            <nombre>Paramount Pictures</nombre>
+            <fecha dato="nacimiento">1914</fecha>
+        </estudio>
+    </estudios>
+
+    <actores>
+        <actor nombre="James Stewart" nacimiento="1908" muerte="1997" />
+        <actor nombre="Grace Kelly" nacimiento="1929" muerte="1982" />
+        <actor nombre="Farley Granger" nacimiento="1925" muerte="2011" />
+        <actor nombre="Ruth Roman" nacimiento="1922" muerte="1999" />
+        <actor nombre="Kim Novack" nacimiento="1933" muerte="" />
+        <actor nombre="Anthony Perkins" nacimiento="1932" muerte="1992" />
+        <actor nombre="Vera Miles" nacimiento="1929" muerte="" />
+    </actores>
+
+    <peliculas>
+        <pelicula>
+            <titulo lang="es">La ventana indiscreta</titulo>
+            <titulo lang="en">Rear Window</titulo>
+            <fecha dato="estreno">1954</fecha>
+            <estudios nombre="paramount" />
+            <oscar nominaciones="4" premios="0" />
+            <actores>
+                <actor>James Stewart</actor>
+                <actriz>Grace Kelly</actriz>
+            </actores>
+        </pelicula>
+
+        <pelicula>
+            <titulo lang="es">Extraños en un tren</titulo>
+            <titulo lang="en">Strangers on a Train</titulo>
+            <fecha dato="estreno">1951</fecha>
+            <estudios nombre="warner" />
+            <oscar nominaciones="1" premios="0" />
+            <actores>
+                <actor>Farley Granger</actor>
+                <actriz>Ruth Roman</actriz>
+            </actores>
+        </pelicula>
+
+        <pelicula>
+            <titulo lang="es">Vértigo</titulo>
+            <titulo lang="en">Vertigo</titulo>
+            <fecha dato="estreno">1958</fecha>
+            <estudios nombre="paramount" />
+            <oscar nominaciones="2" premios="0" />
+            <actores>
+                <actor>James Stewart</actor>
+                <actriz>Kim Novack</actriz>
+            </actores>
+        </pelicula>
+
+        <pelicula>
+            <titulo lang="es">Psicosis</titulo>
+            <titulo lang="en">Psycho</titulo>
+            <fecha dato="estreno">1960</fecha>
+            <estudios nombre="paramount" />
+            <oscar nominaciones="4" premios="0" />
+            <actores>
+                <actor>Anthony Perkins</actor>
+                <actriz>Vera Miles</actriz>
+            </actores>
+        </pelicula>
+    </peliculas>
+</hitchcock>
